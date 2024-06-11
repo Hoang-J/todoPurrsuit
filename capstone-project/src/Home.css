@@ -1,0 +1,5 @@
+body{
+   background-image: url('./images/piedmontpark.jpg');
+   background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
