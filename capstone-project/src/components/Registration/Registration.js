@@ -6,9 +6,9 @@ function Registration() {
   const [registrationData, setRegistrationData] = useState({
     firstname: '',
     lastname: '',
-    // email: '',
-    // username: '',
-    // password: ''
+    email: '',
+    username: '',
+    password: ''
   })
 
 
