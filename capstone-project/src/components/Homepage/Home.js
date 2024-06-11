@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
-import missingcat from '../images/missingcat.png'
-import logo from '../images/TodoPursuit.png'
-import '../Home.css'
-import { useEffect } from 'react'
+
+import missingcat from '../../images/missingcat.png'
+import logo from '../../images/TodoPursuit.png'
+import './Home.css'
 function Home() {
   return (
     <>

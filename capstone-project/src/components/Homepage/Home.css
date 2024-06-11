@@ -1,0 +1,28 @@
+.homeBody>#cat{
+    width: 8%;
+    height:15%;
+  position: absolute;
+  left: 78%;
+  top: 20%;
+  }
+  
+  .homeBody>#catgif{
+    width: 3%;
+    height: 3%;
+    position: absolute;
+  left: 80.5%;
+  top: 25%;
+  }
+  .homeBody>#logo{
+    width: 13%;
+    height: 20%;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+  }
+.homeBody{
+    height: 100vh;
+    background-image: url('../../images/piedmontpark.jpg');
+    background-repeat: no-repeat, repeat;
+     background-size: cover;
+  }
