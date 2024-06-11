@@ -19,7 +19,7 @@ function App() {
     
       {/* <Todo /> */}
       <Registration />
-      {/* <Login /> */}
+      <Login />
 
     </>
   );
