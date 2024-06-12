@@ -30,10 +30,10 @@ function Level1() {
     {/*Using our tenerary operator if fading is false our classname will be only level1body, if fading is true our classname will be fade-out initializing our animation */}
     <div className={`level1body ${fading ? 'fade-out' : ''}`}>
         <img  src='https://i.pinimg.com/originals/5f/93/49/5f934966a1d20bae1909c9ef2278bd4c.gif' id='walkingcat'></img>
-        <div className='thought-bubble'>
-        <img src={Cloud} id='cloud' alt='ThoughtCloud'></img>
-        <p>{texts[index]}</p>
-    </div>
+      <div className='thought-bubble'>
+          <img src={Cloud} id='cloud' alt='ThoughtCloud'></img>
+          <p>{texts[index]}</p>
+      </div>
     {/* Add conditional rendering, as long as the index is less than our text array length the button will be rendered */}
       {index < texts.length -1 && 
         (<button id='button' onClick={handleNextText}>Next</button>
