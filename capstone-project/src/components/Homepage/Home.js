@@ -5,7 +5,6 @@ import './Home.css'
 function Home() {
   return (
     <>
-    <div>NavBar</div>
     <div className='homeBody'>
       <img src={missingcat}  alt='Missingcat' id='cat'></img>
       <img src={logo} alt='logo' id='logo'></img>
