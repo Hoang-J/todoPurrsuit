@@ -1,0 +1,15 @@
+.storeBody{
+    height: 100vh;
+    background-image: url('../../images/kittystore.jpg');
+    background-repeat: no-repeat, repeat;
+     background-size: cover;
+  }
+  #hangingkitty{
+    position: absolute;
+    left: 78.8%;
+    top: 15%;
+  }
+  #donate{
+    height: 25%;
+    width: 15%;
+  }

@@ -1,0 +1,47 @@
+.level1body{
+        height: 100vh;
+        background-image: url('../../images/dungeon.jpg');
+        background-repeat: no-repeat, repeat;
+         background-size: cover;
+      }
+
+      #walkingcat{
+        height: 20%;
+        width: 20%;
+        position: absolute;
+        top: 67%;
+        left: 50%;
+      }
+      #cloud{
+        width: 100%;
+      }
+      .thought-bubble {
+        position: absolute;
+       bottom: 20%;
+       left: 45%;
+        width: 200px;
+      }
+      .thought-bubble p{
+        position: absolute;
+       top: 25%;
+        left: 27%;
+        width: 120px;
+      }
+      #button{
+        position: absolute;
+        bottom: 23%;
+        right: 46%;
+      }
+      .level1body {
+        position: relative;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .level1body.fade-out{
+        opacity: 0;
+      }
+      #GO{
+        position: absolute;
+        bottom: 23%;
+        right: 46%;
+      }
