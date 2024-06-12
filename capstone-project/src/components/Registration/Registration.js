@@ -18,7 +18,6 @@ function Registration() {
 };
 
   function handleSubmit(e) {
-    
     e.preventDefault();
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json")
@@ -33,7 +32,7 @@ function Registration() {
     });
 
     // console.log({firstname: registrationData.firstname, lastname: registrationData.lastname});
-    fetch(`http://localhost:5000/register`, {
+    fetch(`https://todo-purrsuit-backend.vercel.app/register`, {
       method: "POST",
       headers: myHeaders,
       body: data

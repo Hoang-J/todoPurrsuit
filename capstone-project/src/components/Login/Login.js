@@ -21,7 +21,7 @@ function Login() {
     e.preventDefault();
     console.log("called endpoint")
     //e.preventDefault();
-    fetch(`http://localhost:5000/login?username=${loginData.username}&password=${loginData.password}`)
+    fetch(`https://todo-purrsuit-backend.vercel.app/login?username=${loginData.username}&password=${loginData.password}`)
     setLoginData({
       username: '',
       password: ''
