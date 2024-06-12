@@ -1,8 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 /* to-do list font */
-#gloria-hallelujah-regular {
+/* #gloria-hallelujah-regular {
   font-family: "Gloria Hallelujah", cursive;
   font-weight: 400;
   font-style: normal;
+} */
+#notepadImg{
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+/* Todo page styling */
+#notepadImg{
+border-radius: 15px;
+width: 600px;
+height: 750px;
+/* background-color: aqua; */
+/* background-image: url('https://st2.depositphotos.com/5777248/9334/v/950/depositphotos_93345058-stock-illustration-sheet-of-notebook-cartoon-icon.jpg'); */
+/* background-image: url('https://4vector.com/i/free-vector-notepad-clip-art_114504_Notepad_clip_art_hight.png'); */
+background-image: url('../../images/clipboard.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+/* Todolist text */
+#notepadText{
+  position: absolute;
+  top: 235px;
+  left: 130px;
+
+
+
+
 }

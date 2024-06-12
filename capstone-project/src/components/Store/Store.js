@@ -1,6 +1,7 @@
 import React from 'react'
 import './Store.css'
 import donate from '../../images/donate.png'
+import Sidenavbar from '../Sidenav/Sidenavbar'
 
 export default function Store() {
   return (
