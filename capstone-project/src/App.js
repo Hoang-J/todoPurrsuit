@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       <Switch>
-      <Route path="/level1" component={Level1} />
-      <Route path='/level2' component={Level2} />
+        <Route path="/level1" component={Level1} />
+        <Route path='/level2' component={Level2} />
       </Switch>
       {/* <Home /> */}
       {/* <Store /> */}
