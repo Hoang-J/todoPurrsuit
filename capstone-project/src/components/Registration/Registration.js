@@ -5,7 +5,7 @@ function Registration() {
   return (
     <div id='regForm' >
       {/* <!-- Registration form --> */}
-    <form action="http://localhost:3000/register" method="post"/>
+    <form action="http://localhost:3000/register" method="post">
       {/* <!--Container with inputs and labels(email,password,repeat password)and register submit button --> */}
         <div class="container">
           <h1>Register</h1>
@@ -35,7 +35,7 @@ function Registration() {
           <a class="home" href="../index.html">Home</a>
           <p id="regtx">Already have an account? <a href="../Login/logform.html">Login</a>.</p>
         </div>
-      <form/> 
+      </form> 
         
     </div>
   )
