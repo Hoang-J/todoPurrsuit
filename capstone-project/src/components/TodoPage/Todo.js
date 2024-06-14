@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import './Todo.css' 
-import charHappy from '../../images/main-character-smile.png'
-import charCry from '../../images/main-character-cry.png'
-import charShock from '../../images/main-character-shock.png'
+// import charHappy from '../../images/main-character-smile.png'
+// import charCry from '../../images/main-character-cry.png'
+// import charShock from '../../images/main-character-shock.png'
+import catStretch from '../../images/white-cat-expression-stretch.png'
+import catLook from '../../images/white-cat-expression-move-right.png'
+import catWave from '../../images/white-cat-expression-wave.png'
 import catPaw from '../../images/white-cat-up-paw.png'
 
 // Todo page
@@ -19,9 +22,9 @@ function Todo() {
     "Please come back home, Todo!"
   ];
   const pics = [
-    charHappy,
-    charShock,
-    charCry
+    catStretch,
+    catLook,
+    catWave
 
   ]
   // Set condition that as long as index is less than our text array length increment + 1
