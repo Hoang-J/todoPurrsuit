@@ -18,6 +18,9 @@ function Sidenavbar() {
         <MenuItem component={<Link to="/store" />}> Store </MenuItem>
         <MenuItem component={<Link to="/Level1" />}> Level 1 </MenuItem>
         {/* <MenuItem component={<Link to="/" />}> New Route</MenuItem> */}
+        <MenuItem component={<Link to="/story1" />}> Story1 </MenuItem>
+        <MenuItem component={<Link to="/story2" />}> Story2 </MenuItem>
+        <MenuItem component={<Link to="/story3" />}> Story3 </MenuItem>
       </Menu>
     </Sidebar>
     <main style={{ display: 'flex', padding: 10 }}>
