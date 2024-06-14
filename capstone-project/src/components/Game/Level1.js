@@ -10,9 +10,9 @@ function Level1() {
   //useHistory hook lets us access paths that we have set up
   const history = useHistory()
   const texts = [
-    "Where am I? I need to find a way out!",
+    "This is not how I imagined hanging out on a Wednesday...",
     "Maybe if I look around, I'll find an escape.",
-    "Oh! I see an opening in the window!" 
+    "Thats an interesting crack on the wall..." 
   ];
   // Set condition that as long as index is less than our text array length increment + 1
   const handleNextText = () => {
@@ -30,7 +30,7 @@ function Level1() {
     <>
       {/*Using our tenerary operator if fading is false our classname will be only level1body, if fading is true our classname will be fade-out initializing our animation */}
       <div className={`level1body ${fading ? 'fade-out' : ''}`}>
-        <img  src='https://i.pinimg.com/originals/5f/93/49/5f934966a1d20bae1909c9ef2278bd4c.gif' id='walkingcat' />
+        <img  src='https://33.media.tumblr.com/973cd8378c3b9be1c0dcaa2d92a22f04/tumblr_nur9nm4wWw1tlsxv1o1_250.gif' id='walkingcat' />
         <div className='thought-bubble'>
           <img src={Cloud} id='cloud' alt='ThoughtCloud' />
           <p>{texts[index]}</p>
