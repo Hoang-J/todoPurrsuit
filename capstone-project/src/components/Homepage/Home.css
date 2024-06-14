@@ -26,4 +26,8 @@
     background-repeat: no-repeat, repeat;
      background-size: cover;
   }
- 
+  .playScreen{
+    border: solid black 1px;
+    height: 100px;
+    width: 100px;
+  }

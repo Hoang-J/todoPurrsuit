@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react'
 import './Level.css'
 import Kitty from '../../images/catrunning.gif'
 import Doggy from '../../images/dog.gif'
+import Cloud from '../../images/thoughtcloud.png'
+import { useHistory } from 'react-router-dom';
 
 function Level2() {
   // Position state helps us move character on X axis
@@ -14,6 +16,21 @@ function Level2() {
   // jumping and jump height states helpe us initiate jumping animation and falling
   const [jumping, setJumping] = useState(false)
   const [jumpHeight, setJumpHeight] = useState(0)
+
+  const [index, setIndex] = useState(0);
+  const [fading, setFading] = useState(false)
+  const history = useHistory()
+  const texts = [
+    "Hello Kitty, you look lost",
+    "The boss has been a little stingy with the kebble latley, so i'm feeling merciful today...",
+    "If you want to get outta here you have to solve this riddle.",
+    "I usually fetch this, but now it is you. Grab this for me and let freedom = true"
+  ];
+  const handleNextText = () => {
+    if (index < texts.length - 1){
+      setIndex(index + 1)
+    }
+  }
   useEffect(() => {
     const handleKeyPress = e => {
       if (e.key === 'ArrowLeft') {
@@ -44,6 +61,13 @@ function Level2() {
       document.removeEventListener('keydown', handleKeyPress);
     };
   }, []);
+  const freedom = () =>{
+    setFading(true)
+    setTimeout(() => {
+   history.push('/pausescreen')
+    }, 500);
+    
+  }
 
   const transform = `translateX(${position}px) translateY(${jumpHeight}px) ${left ? 'scaleX(-1)' : ''}`;
   const transition = jumping ? 'transform 0.3s ease-out' : 'transform 0.3s ease-out'
@@ -54,8 +78,15 @@ function Level2() {
       <img id='Dungeon1' src={Dungeon1}></img> 
       <img id='Dungeon2' src={Dungeon2}></img>
     </div>
-    <img className={`Cat2 ${jumping ? 'jump' : ''}`} style={{ transform, transition }} src={Kitty}></img>
+    <img className='Cat2' style={{ transform, transition }} src={Kitty}></img>
     <img id='dog' src={Doggy}></img>
+    <p id='dogtext'>{texts[index]}</p>
+    <div onClick={freedom} className='freedom'></div>
+    <img id='cloud' src={Cloud}></img>
+    {index < texts.length -1 && (
+          <button id='button1' onClick={handleNextText}>Next</button>
+        )}
+      
     
     
     </>
