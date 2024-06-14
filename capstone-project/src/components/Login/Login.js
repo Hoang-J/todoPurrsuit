@@ -29,11 +29,11 @@ function Login() {
   }
 
   return (
-    <div id='logForm'>
+    <div id='logMain'>
     
-      {/* <!-- Login form --> */}
-      <form onSubmit={handleSubmit}>
-      {/* <!--Container with inputs and labels(email,password,repeat password)and register submit button --> */}
+      {/* Login form  */}
+      <form onSubmit={handleSubmit} id='logForm'>
+      {/* Container with inputs and labels(Username,Password)and Login submit button */}
         <div class="logcontainer">
           <h1>Login</h1>
              <hr/>
@@ -43,9 +43,9 @@ function Login() {
               <label for="Password"><b>Password</b></label>
               <input type="password" name="password"  class="form-control" id="password" minlength="4" maxlength="30" onChange={handleInputChange} value={loginData.password} required/>
 
-              <a class="home" href="../index.html">Home</a>
+              <a class="home" href="../home">Home</a>
           
-          {/* Login submit button  */}
+          {/* Login submit button */}
           <button type="submit" class="loginbtn">Login</button>
         </div>
       </form>

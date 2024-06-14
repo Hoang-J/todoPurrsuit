@@ -6,7 +6,7 @@ import charCry from '../../images/main-character-cry.png'
 import charShock from '../../images/main-character-shock.png'
 import catPaw from '../../images/white-cat-up-paw.png'
 
-
+// Todo page
 function Todo() {
 
   const [index, setIndex] = useState(0);
@@ -65,9 +65,13 @@ return (
           <label for="task1">Wash the car</label><br/>
           <input type="checkbox" id="task2" name="task2" onClick={tasksClicked} value={2}/>
           <label for="task2">Grocery Shop</label><br/>
+          {/* <input type="checkbox" id="task3" name="task3" onClick={task3Clicked}/> */}
+          {/* <label for="task3">Feed the cat</label><br/> */}
+          {/* <input type="submit" value="Submit"/> */}
           <input type="checkbox" id="task3" name="task3" onClick={task3Clicked}/>
-          <label for="task3">Feed the cat</label><br/>
-          <input type="submit" value="Submit"/>
+          <label for="task3" style={{color: "red"}}>Feed the cat</label><br/>
+          {/* <input type="submit" value="Submit"/> */}
+          <button id='todoButton'>Submit</button>
           </div>
       </div>
   </div>

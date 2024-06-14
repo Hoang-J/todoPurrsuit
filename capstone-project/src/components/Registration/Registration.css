@@ -1,24 +1,24 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 /* Registration Form Styling */
 /* body styling */
 * {box-sizing: border-box}
-#regForm{
-display: flex;
-flex-direction: column;
-align-items: center;
-/* background-image: url(''); */
-/* background-image: url(''); */
-/* background-image: url(''); */
-background-image: url('https://pbs.twimg.com/media/EW17a__XQAArEGu.png');
-/* background-image: url('https://c8.alamy.com/comp/2BJ23G3/cute-cartoon-8bit-grey-and-orange-tabby-cat-seamless-vector-pattern-kawaii-pixel-art-kitty-pet-domestic-pet-kitten-video-game-illustration-all-over-2BJ23G3.jpg'); */
-background-repeat: no-repeat;
-background-size: cover;
+#regMain{
+  /* background-image: url(''); */
+  /* background-image: url(''); */
+  background-image: url('../../images/LoginandReg.jpg');
+  /* background-image: url('https://pbs.twimg.com/media/EW17a__XQAArEGu.png'); */
+  /* background-image: url('https://c8.alamy.com/comp/2BJ23G3/cute-cartoon-8bit-grey-and-orange-tabby-cat-seamless-vector-pattern-kawaii-pixel-art-kitty-pet-domestic-pet-kitten-video-game-illustration-all-over-2BJ23G3.jpg'); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
 /* Registration form styling */
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#regForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 600;
+  font-style: normal;
 }
 
 #regtx{
@@ -28,13 +28,13 @@ form{
 
 /* Add padding to containers */
 .container { 
-color: pink;
-border: solid pink 10px;
-border-radius: 15px;
-background-color: gray;
-width: 35%;
-padding: 15px;
-}
+  color: pink;
+  border: solid pink 10px;
+  border-radius: 15px;
+  background-color: gray;
+  width: 35%;
+  padding: 15px;
+  }
 
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=email], input[type=number] {
