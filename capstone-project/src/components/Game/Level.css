@@ -66,7 +66,7 @@
       #dog{
         z-index: 2;
         position: absolute;
-        top: 74%;
+        top: 70%;
         left: 170%;
       }
       #button1{
@@ -96,17 +96,12 @@
         height: 15px;
         width: 12px;
         position: absolute;
-        top: 63.5%;
-        left: 131%;
+        top: 61.5%;
+        left: 124.5%;
         height: 25%;
         transform: rotate(-49deg);
       }
-      .level2body{
-        transition: opacity 1s ease-in-out;
-      }
-      .level2body.fade-out{
-        opacity: 0;
-      }
+ 
     
      
     

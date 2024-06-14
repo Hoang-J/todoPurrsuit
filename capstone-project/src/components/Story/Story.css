@@ -1,0 +1,63 @@
+.textbox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    border: 2px solid #33343593;
+    background-color: #4b4646c0;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 50px;
+    padding-left: 2%;
+}
+
+.cat-talk {
+    position: absolute;
+    left: 140vh;
+    bottom: 3vh;
+    width: 25vh;
+    height: 25vh;
+    z-index: 1;
+}
+
+.level1body{
+    height: 95vh;
+    background-image: url('../../images/broken-laundry-room.jpg');
+    background-repeat: no-repeat, repeat;
+     background-size: cover;
+}
+
+.level2body{
+    height: 95vh;
+    background-image: url('../../images/broken-living-room.jpg');
+    background-repeat: no-repeat, repeat;
+     background-size: cover;
+}
+
+.level3body{
+  height: 95vh;
+  background-image: url('../../images/rainy-backyard.png');
+  background-repeat: no-repeat, repeat;
+   background-size: cover;
+}
+
+#button{
+  position: absolute;
+  bottom: 4vh;
+  left: 83vh;
+  width: 10vh;
+}
+.level1body, .level2body, .level3body{
+  position: relative;
+  transition: opacity 1s ease-in-out;
+}
+
+.level1body.fade-out, .level2body.fade-out, .level3body.fade-out{
+  opacity: 0;
+}
+
+#GO{
+  position: absolute;
+  bottom: 4vh;
+  left: 83vh;
+  width: 10vh;
+}

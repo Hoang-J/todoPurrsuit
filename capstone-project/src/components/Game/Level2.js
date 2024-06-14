@@ -64,7 +64,7 @@ function Level2() {
   const freedom = () =>{
     setFading(true)
     setTimeout(() => {
-   history.push('/pausescreen')
+   history.push('/home')
     }, 500);
     
   }
