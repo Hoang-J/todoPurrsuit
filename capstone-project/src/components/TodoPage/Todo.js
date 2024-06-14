@@ -1,7 +1,7 @@
 import React from 'react'
 import './Todo.css' 
 
-
+// Todo page
 function Todo() {
 return (
   <div id='todopaper'>
@@ -13,8 +13,9 @@ return (
           <input type="checkbox" id="task2" name="task2"/>
           <label for="task2">Grocery Shop</label><br/>
           <input type="checkbox" id="task3" name="task3"/>
-          <label for="task3">Feed the cat</label><br/>
-          <input type="submit" value="Submit"/>
+          <label for="task3" style={{color: "red"}}>Feed the cat</label><br/>
+          {/* <input type="submit" value="Submit"/> */}
+          <button id='todoButton'>Submit</button>
           </div>
       </div>
   </div>
