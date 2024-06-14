@@ -9,7 +9,7 @@ import Sidenavbar from './components/Sidenav/Sidenavbar';
 import Story1 from './components/Story/Story1';
 import Story2 from './components/Story/Story2';
 import Story3 from './components/Story/Story3';
-
+import Story4 from './components/Story/Story4';
 
 import {
   Switch,
@@ -34,6 +34,7 @@ function App() {
         <Route path='/story1' component={Story1} />
         <Route path='/story2' component={Story2} />
         <Route path='/story3' component={Story3} />
+        <Route path='/story4' component={Story4} />
       </Switch>
     </>
   );
