@@ -1,9 +1,13 @@
 /* Level1 */
-.level1body{
+.level1bg{
         height: 100vh;
-        background-image: url('../../images/dungeon.jpg');
+        background-image: url('../../images/broken-laundry-room.jpg');
         background-repeat: no-repeat, repeat;
-         background-size: cover;
+        background-size: cover;
+        opacity: 0.4;
+        display: flex;
+        z-index: 0;
+        position: relative;
       }
 
       #walkingcat{
@@ -68,8 +72,107 @@
     
      
 
-
-
-      
+/* justin's maze style */
 
       
+.cat-player {
+  /* background-color: green; */
+  /* width: 100px;
+  height: 100px; */
+  overflow: hidden;
+}
+
+.game-window {
+  /* left: 100px; */
+  position: absolute;
+  /* width: 90%;
+  height: 100%; */
+  border: 2px solid white;
+  background-color: lightpink;
+  box-shadow: 0 0 5px 5px rgb(220, 220, 220);
+  /* overflow: hidden; */
+  border-radius: 10%;
+} 
+
+.leftBox {
+  /* height: 300px;
+  width: 200px; */
+  background-color: grey;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.rightBox {
+  /* height: 300px;
+  width: 200px; */
+  background-color: grey;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+
+}
+
+.maze1 {
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 4px solid green; */
+}
+
+.maze {
+  /* position: absolute; */
+  /* border: 4px solid red; */
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testing {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative;
+  flex-direction: column;
+  /* border: 4px solid green; */
+  width: 100%;
+  height: 800px;
+}
+
+.everything {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pawpad {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  z-index: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 3px solid rgb(0, 0, 0); */
+  background-color: skyblue;
+  border-radius: 10%;
+  box-shadow: 0 0 5px 5px rgb(220, 220, 220);
+  height: 33%;
+  width: 40%;
+
+}
+
+.left-right-pad {
+  display: flex;
+  justify-content:space-evenly;
+  height: 35%;
+}
+
+.pawpad > img {
+  height: 30%;
+}
+
