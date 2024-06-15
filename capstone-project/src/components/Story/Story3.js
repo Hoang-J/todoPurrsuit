@@ -31,7 +31,7 @@ function Story3() {
     } else {
       setFading(true);
       setTimeout(()=> {
-        history.push('/level2')
+        history.push('/level3')
       },1000)
     }
   }
