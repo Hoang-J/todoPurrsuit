@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Level.css'
+import './Level1.css'
 import { useHistory } from 'react-router-dom';
 import Cat from '../../images/catrunning.gif';
 import Downpaw from '../../images/downpaw.png';

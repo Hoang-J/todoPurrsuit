@@ -57,8 +57,47 @@
        transition: left 0.3s ease;
        overflow: hidden;
       }
+      #dog{
+        z-index: 2;
+        position: absolute;
+        top: 70%;
+        left: 170%;
+      }
+      #button1{
+        z-index: 2;
+        position: absolute;
+        top: 80%;
+        left: 164.5%;
+      }
+      #dogtext{
+        z-index: 3;
+        position: absolute;
+        top: 68%;
+        left: 161%;
+        font-size: small;
+        width: 10%;
+      }
+      #cloud{
+        z-index: 2;
+        position: absolute;
+        top: 60%;
+        left: 157%;
+        height: 30%;
+        width: auto;
+      }
+      .freedom{
+        z-index: 5;
+        height: 15px;
+        width: 12px;
+        position: absolute;
+        top: 61.5%;
+        left: 124.5%;
+        height: 25%;
+        transform: rotate(-49deg);
+      }
+ 
     
-
+     
     
      
 
