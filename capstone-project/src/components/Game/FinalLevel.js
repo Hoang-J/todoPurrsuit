@@ -1,8 +1,8 @@
 import React from 'react'
-import Dungeon1 from '../../images/backyard1.jpg'
-import Dungeon2 from '../../images/backyard2.jpg'
+import Dungeon1 from '../../images/rainy-background-2.jpg'
+import Dungeon2 from '../../images/rainy-background-2.jpg'
 import { useState, useEffect } from 'react'
-import './Level1.css'
+import './FinalLevel.css'
 import Kitty from '../../images/catrunning.gif'
 import Doggy from '../../images/dog.gif'
 import Cloud from '../../images/thoughtcloud.png'
@@ -21,9 +21,11 @@ function FinalLevel() {
   const [fading, setFading] = useState(false)
   const history = useHistory()
   const texts = [
-    "Hello Kitty, you look lost",
-    "The boss has been a little stingy with the kibble lately, so I might not be the best guard dog today... I'll show you some mercy",
-    "If you want to get outta here, you have to solve this riddle:",
+    "Hey Kitty, you lost?",
+    "The boss has been a little stingy with the kibble lately so...",
+    "I might not be the best guard dog today...",
+    "I'll show you some mercy",
+    "If you want to get outta here, you have to solve this riddle",
     "I usually fetch this, but now it's for you. Grab this for me to let freedom = true"
   ];
   const handleNextText = () => {
@@ -64,14 +66,14 @@ function FinalLevel() {
   const freedom = () =>{
     setFading(true)
     setTimeout(() => {
-   history.push('/home')
+   history.push('/Story5')
     }, 500);
     
   }
 
   const transform = `translateX(${position}px) translateY(${jumpHeight}px) ${left ? 'scaleX(-1)' : ''}`;
   const transition = jumping ? 'transform 0.3s ease-out' : 'transform 0.3s ease-out'
- 
+
   return (
     <>
     <div className='level2body'>

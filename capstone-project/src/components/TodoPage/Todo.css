@@ -60,12 +60,12 @@
   font-family: "Gloria Hallelujah", cursive;
 }
 
-.cat-talk {
+.char-talk {
   position: absolute;
-  left: 140vh;
+  left: 150vh;
   bottom: 3vh;
-  width: 25vh;
-  height: 25vh;
+  width: 24vh;
+  height: 30vh;
   z-index: 1;
 }
 
