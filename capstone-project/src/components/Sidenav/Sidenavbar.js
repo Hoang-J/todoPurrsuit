@@ -10,7 +10,7 @@ function Sidenavbar() {
   return (
     <>
     <div id='sidebar'>
-    <Sidebar onBackdropClick={() => setToggled(false)} toggled={toggled} breakPoint="always"  backgroundColor='rgba(0, 255, 255, 0.622)'>
+    <Sidebar onBackdropClick={() => setToggled(false)} toggled={toggled} breakPoint="always"  backgroundColor='rgba(135, 207, 235, 0.852)'>
       <Menu>
         <MenuItem component={<Link to="/todo" />}>Todo</MenuItem>
         <MenuItem component={<Link to="/home" />}> Home </MenuItem>
