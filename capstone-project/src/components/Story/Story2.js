@@ -14,7 +14,7 @@ function Story2() {
   //useHistory hook lets us access paths that we have set up
   const history = useHistory()
   const texts = [
-    "Oh my meow! This house is so mess!",
+    "Oh my meow! This house is so messy!",
     "Okay, focus. I need to find the front door.",
     "Let's keep searching!"
   ];

@@ -115,13 +115,10 @@
 }
 
 .cat-player {
-  /* background-color: green; */
-  /* width: 100px;
-  height: 100px; */
   overflow: hidden;
 }
 
-.game-window {
+.game1-window {
   position: absolute;
   border: 2px solid white;
   background-color: lightpink;
@@ -130,17 +127,13 @@
 } 
 
 .leftBox {
-  /* height: 300px;
-  width: 200px; */
-  background-color: grey;
+  background-color: #bb96c8;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
 }
 
 .rightBox {
-  /* height: 300px;
-  width: 200px; */
-  background-color: grey;
+  background-color: #bb96c8;
   border-top-left-radius: 10%;
   border-bottom-left-radius: 10%;
 
@@ -184,7 +177,6 @@
   z-index: 1;
   flex-direction: row;
   flex-wrap: wrap;
-  /* border: 3px solid rgb(0, 0, 0); */
   background-color: skyblue;
   border-radius: 10%;
   box-shadow: 0 0 5px 5px rgb(220, 220, 220);
