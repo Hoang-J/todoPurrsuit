@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import './Story.css'
 import { useHistory } from 'react-router-dom';
+import catLook from '../../images/white-cat-expression-turn-right.png'
 import catWave from '../../images/white-cat-expression-wave.png'
-import catLook from '../../images/white-cat-expression-move-right.png'
-import catStretch from '../../images/white-cat-expression-stretch.png'
+import catAngry from '../../images/white-cat-expression-angry.png'
 import catPaw from '../../images/white-cat-up-paw.png'
-import TypeWriter from '../TypeWriter/TypeWriter';
+
 
 
 
@@ -15,14 +15,14 @@ function Story4() {
   //useHistory hook lets us access paths that we have set up
   const history = useHistory()
   const texts = [
-    "Phew, I thought I was going to be a goner back there.",
-    "I think that's the exit!",
-    <TypeWriter text={"Where do you think you're going kitty..."}/>
+    "Phew, I thought I was going to be a goner.",
+    "Hmmm...which way is home...",
+    "Oh no...is that a dog??"
   ];
   const pics = [
     catWave,
-    catStretch,
-    catLook
+    catLook,
+    catAngry
 
   ]
   // Set condition that as long as index is less than our text array length increment + 1
@@ -32,7 +32,7 @@ function Story4() {
     } else {
       setFading(true);
       setTimeout(()=> {
-        history.push('/level2')
+        history.push('/finallevel')
       },1000)
     }
   }
@@ -40,7 +40,7 @@ function Story4() {
   return (
     <>
       {/*Using our tenerary operator if fading is false our classname will be only level1body, if fading is true our classname will be fade-out initializing our animation */}
-      <div className={`level3body ${fading ? 'fade-out' : ''}`}>
+      <div className={`level4body ${fading ? 'fade-out' : ''}`}>
         <div className='textbox'>
           <p>{texts[index]}</p>
           <img className='cat-talk' src={pics[index]} />
