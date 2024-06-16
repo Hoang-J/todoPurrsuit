@@ -12,6 +12,7 @@ import Story1 from './components/Story/Story1';
 import Story2 from './components/Story/Story2';
 import Story3 from './components/Story/Story3';
 import Story4 from './components/Story/Story4';
+import Story5 from './components/Story/Story5';
 
 import {
   Switch,
@@ -39,6 +40,7 @@ function App() {
         <Route path='/story2' component={Story2} />
         <Route path='/story3' component={Story3} />
         <Route path='/story4' component={Story4} />
+        <Route path='/story5' component={Story5} />
       </Switch>
     </>
   );
