@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import './Level.css'
-import Cloud from '../../images/thoughtcloud.png'
 import { useHistory } from 'react-router-dom';
+import Cat from '../../images/catrunning.gif';
+import Downpaw from '../../images/downpaw.png';
+import Uppaw from '../../images/uppaw.png';
+import Rightpaw from '../../images/rightpaw.png';
+import Leftpaw from '../../images/leftpaw.png';
+import Wave from '../../images/white-cat-expression-wave.png'
 
 
 function Level1() {
@@ -9,41 +14,167 @@ function Level1() {
   const [fading, setFading] = useState(false)
   //useHistory hook lets us access paths that we have set up
   const history = useHistory()
-  const texts = [
-    "This is not how I imagined hanging out on a Wednesday...",
-    "Maybe if I look around, I'll find an escape.",
-    "Thats an interesting crack on the wall..." 
-  ];
   // Set condition that as long as index is less than our text array length increment + 1
   const handleNextText = () => {
-    if (index < texts.length - 1){
-      setIndex(index + 1)
-    } else {
+    {
       setFading(true);
       setTimeout(()=> {
-        history.push('/level2')
+        history.push('/story2')
       },1000)
     }
   }
 
+
+  // justin's maze code
+    const [xAxisPosition, setXAxisPosition] = useState(0)
+    const [yAxisPosition, setYAxisPosition] = useState(0)
+
+    const [parentWidth, setParentWidth] = useState(500)
+    const [parentHeight, setParentHeight] = useState(500)
+
+    const [wallWidth, setWallWidth] = useState(200)
+    const [wallHeight, setWallHeight] = useState(300)
+
+    const [catWidth, setCatWidth] = useState(100)
+    const [catHeight, setCatHeight] = useState(100)
+
+    const [rightBox, setRightBox] = useState(0)
+    const [leftBox, setLeftBox] = useState(0)
+
+
+    function movingRightAction() {
+        
+        if(xAxisPosition + 100 < parentWidth) {
+            if (yAxisPosition < catHeight || yAxisPosition >= parentHeight - catHeight) {
+                setXAxisPosition(xAxisPosition + 100)
+            }
+        }
+    }
+
+    function movingLeftAction() {
+        if(xAxisPosition - 100 >= 0) {
+            if (yAxisPosition < catHeight || yAxisPosition >= parentHeight - catHeight) {
+                setXAxisPosition(xAxisPosition - 100)
+            }
+        }
+    }
+
+    function movingDownAction() {
+        if(yAxisPosition + 100 < parentHeight) {
+            if (xAxisPosition + 100 > wallWidth && xAxisPosition < (parentWidth - wallWidth)) {
+                setYAxisPosition(yAxisPosition + 100)
+            }
+        }
+    }
+
+    function movingUpAction() {
+        if(yAxisPosition - 100 >= 0) {
+            if (xAxisPosition + 100 > wallWidth && xAxisPosition < (parentWidth - wallWidth)) {
+                setYAxisPosition(yAxisPosition - 100)
+            }
+        }
+    }
+
   return (
     <>
+
       {/*Using our tenerary operator if fading is false our classname will be only level1body, if fading is true our classname will be fade-out initializing our animation */}
-      <div className={`level1body ${fading ? 'fade-out' : ''}`}>
-        <img  src='https://33.media.tumblr.com/973cd8378c3b9be1c0dcaa2d92a22f04/tumblr_nur9nm4wWw1tlsxv1o1_250.gif' id='walkingcat' />
-        <div className='thought-bubble'>
-          <img src={Cloud} id='cloud' alt='ThoughtCloud' />
-          <p>{texts[index]}</p>
+      <div className={`level1bg ${fading ? 'fade-out' : ''}`}></div>
+      <div className= 'everything'>
+        
+        <div className="maze1">
+          <div className="testing">
+            <div className="maze">
+                <div className="game-window" style={{ 
+                    width: `${parentWidth}px`,
+                    height: `${parentHeight}px`}} >
+                    <img src={Cat}
+                    className="cat-player" 
+                    style={{ 
+                        width: `${catWidth}px`,
+                        height: `${catHeight}px`,
+                        position: "absolute",
+                        left: `${xAxisPosition}px`,
+                        right: `${xAxisPosition}px`,
+                        bottom: `${yAxisPosition}px`,
+                        top: `${yAxisPosition}px`
+                    }} ></img> 
+                    <div className = "leftBox" style={{ 
+                        height: `${wallHeight}px`,
+                        width: `${wallWidth}px`,
+                        position: "absolute",
+                        left: `${leftBox}px`,
+                        top: 100,
+                    }}></div>
+                    <div className = "rightBox"
+                    style={{ 
+                        height: `${wallHeight}px`,
+                        width: `${wallWidth}px`,
+                        position: "absolute",
+                        right: `${rightBox}px`,
+                        top: 100,
+                    }}></div>
+                </div>
+            </div>
+            <div className="pawpad" style={{
+              width: "450px"
+            }}>
+                <img src={Uppaw} onClick={movingUpAction} ></img>
+                <div className= "left-right-pad">
+                    <img src={Leftpaw} onClick={movingLeftAction} ></img>
+                    <img src={Rightpaw} onClick={movingRightAction} ></img>
+                </div>
+                <img src={Downpaw} onClick={movingDownAction} ></img>
+            </div>
+          </div>
         </div>
-        {/* Add conditional rendering, as long as the index is less than our text array length the button will be rendered */}
-        {index < texts.length -1 && (
-          <button id='button' onClick={handleNextText}>Next</button>
-        )}
-        {/* using conditoinal rendering once our index is equal to our arrays length our go button will be available, allowing us to transition to the next scene */}
-        {index === texts.length - 1 && (
-          <button id='GO' onClick={handleNextText}>GO!</button>
-        )}
       </div>
+      {/* conditional rendering for a modal */}
+      {(xAxisPosition >= 400 && yAxisPosition >=400 ) && (
+
+        <div style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(0, 0, 0, 0.5)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            "z-index": "2"
+        }}>
+            <div className= "modal" style={{
+                background: "lightskyblue",
+                height: "50%",
+                width: "30%",
+                margin: "auto",
+                padding: "2%",
+                border: "2px solid #000",
+                borderRadius: "10px",
+                "box-shadow": "0 0 5px 5px rgb(220, 220, 220)",
+            }}> 
+              <center>
+                <h1 style={{
+                  "font-family": "Gloria Hallelujah, cursive",
+                }}>Level Complete!</h1>
+                <img src={Wave}/>
+                <br />
+                <button style={{
+                  background: "pink",
+                  width: "40%",
+                  border: "2px solid grey",
+                  "border-radius": "50%",
+                  padding: "5%",
+                  "font-size": "x-large",
+                  "box-shadow": "0 0 3px 3px white",
+                  "font-family": "Gloria Hallelujah, cursive",
+                }} onClick={handleNextText}>Next Level</button>
+              </center>
+            </div>
+        </div>
+        
+      )}
     </>
   )
 }
