@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Level.css'
+import './Level1.css'
 import { useHistory } from 'react-router-dom';
 import Cat from '../../images/catrunning.gif';
 import Downpaw from '../../images/downpaw.png';
@@ -80,8 +80,7 @@ function Level1() {
 
       {/*Using our tenerary operator if fading is false our classname will be only level1body, if fading is true our classname will be fade-out initializing our animation */}
       <div className={`level1bg ${fading ? 'fade-out' : ''}`}></div>
-      <div className= 'everything'>
-        
+      <div className= 'everything'> 
         <div className="maze1">
           <div className="testing">
             <div className="maze">

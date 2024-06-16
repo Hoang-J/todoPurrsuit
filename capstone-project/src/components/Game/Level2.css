@@ -1,0 +1,79 @@
+.level2bg {
+    height: 100vh;
+    background-image: url('../../images/broken-living-room.jpg');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    opacity: 0.4;
+    display: flex;
+    z-index: 0;
+    position: relative;
+}
+
+
+.cat-player {
+    overflow: hidden;
+}
+
+.game-window {
+    position: absolute;
+    border: 2px solid white;
+    background-color: lightpink;
+    box-shadow: 0 0 5px 5px rgb(220, 220, 220);
+    border-radius: 10%;
+} 
+
+.leftBox {
+    background-color: grey;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.topBox {
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.bottomBox {
+    background-color: grey;
+    border-bottom-right-radius: 20%;
+
+    border-bottom-left-radius: 20%;
+}
+
+.maze2 {
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.everything {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    /* position: relative; */
+    flex-direction: column;
+    width: 100%;
+    /* height: 800px; */
+    border: 4px solid green;
+}
+
+.pawpad {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: skyblue;
+    border-radius: 10%;
+    box-shadow: 0 0 5px 5px rgb(220, 220, 220);
+    height: 33%;
+    width: 40%;
+}
+
