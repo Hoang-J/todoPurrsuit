@@ -89,7 +89,7 @@ return (
     <div className='everything'>
         <div className='maze2'>
             <div className='maze'>
-                <div className="game-window" style={{ 
+                <div className="game2-window" style={{ 
                         width: `${parentWidth}px`,
                         height: `${parentHeight}px`,
                     }} >
@@ -103,7 +103,7 @@ return (
                         top: `${yAxisPosition}px`
                         }} >   
                         </img> 
-                        <div className = "leftBox" style={{ 
+                        <div className = "leftDiv" style={{ 
                             height: `${wallHeight}px`,
                             width: `${wallWidth}px`,
                             position: "absolute",

@@ -84,7 +84,7 @@ function Level1() {
         <div className="maze1">
           <div className="testing">
             <div className="maze">
-                <div className="game-window" style={{ 
+                <div className="game1-window" style={{ 
                     width: `${parentWidth}px`,
                     height: `${parentHeight}px`}} >
                     <img src={Cat}
