@@ -1,6 +1,6 @@
 import React from 'react'
-import Dungeon1 from '../../images/rainy-background-2.jpg'
-import Dungeon2 from '../../images/rainy-background-2.jpg'
+import Dungeon1 from '../../images/metal-fence-background.jpg'
+import Dungeon2 from '../../images/metal-fence-background.jpg'
 import { useState, useEffect } from 'react'
 import './FinalLevel.css'
 import Kitty from '../../images/catrunning.gif'
