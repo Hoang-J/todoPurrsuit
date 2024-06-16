@@ -35,12 +35,12 @@ function FinalLevel() {
     const handleKeyPress = e => {
       if (e.key === 'ArrowLeft') {
         console.log(`Do left action`);
-        setPosition((prev) => prev - 35)
+        setPosition((prev) => prev - 100)
         isLeft(true)
 
       } else if (e.key === 'ArrowRight') {
         console.log(`Do right action`);
-        setPosition((prev) => prev + 35)
+        setPosition((prev) => prev + 100)
         isLeft(false)
       }
       else if ( e.key === ' ') {

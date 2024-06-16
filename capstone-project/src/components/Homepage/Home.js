@@ -1,17 +1,37 @@
+import React, {useState} from 'react';
+import { useHistory } from 'react-router-dom';
+import missingcat from '../../images/missingcat.png';
+import logo from '../../images/TodoPursuit.png';
+import cat from '../../images/white-cat-expression-stand.png';
+import './Home.css';
 
-import missingcat from '../../images/missingcat.png'
-import logo from '../../images/TodoPursuit.png'
-import './Home.css'
-function Home() {
+export default function Home() {
+
+  const [fading, setFading] = useState(false)
+  //useHistory hook lets us access paths that we have set up
+  const history = useHistory()
+  // Set condition that as long as index is less than our text array length increment + 1
+  const handleNextText = () => {
+    {
+      setFading(true);
+      setTimeout(()=> {
+        history.push('/story1')
+      },1000)
+    }
+  }
+
   return (
     <>
-    <div className='homeBody'>
-      <img src={missingcat}  alt='Missingcat' id='cat'></img>
-      <img src={logo} alt='logo' id='logo'></img>
-      <img src='https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjFxdThhNGhpend3dDI3ODR4Y3NsNGRhZjB5dWpkM3V0cHZ4cmZxbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C3ADmBThxaNdS/giphy.gif' id='catgif' alt='catgif'></img>
-    </div>
+      <div className={`level1body ${fading ? 'fade-out' : ''}`}>
+        <div className='homeBody'>
+          <div className="poster">
+            <img src={missingcat}  alt='Missingcat' id='cat'></img>
+            <button className="start" onClick={handleNextText}>FIND TODO</button>
+          </div>
+          <img src={logo} alt='logo' id='logo'></img>
+          <img src={cat} id='catgif' alt='catgif'></img>
+        </div>
+      </div>
     </>
   )
 }
-
-export default Home
