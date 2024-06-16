@@ -24,9 +24,9 @@ function FinalLevel() {
     "Hey Kitty, you lost?",
     "The boss has been a little stingy with the kibble lately so...",
     "I might not be the best guard dog today...",
-    "I'll show you some mercy",
-    "If you want to get outta here, you have to solve this riddle",
-    "I usually fetch this, but now it's for you. Grab this for me to let freedom = true"
+    "I'll show you some mercy.",
+    "If you want to get out, you have to solve this riddle:",
+    "I usually fetch this, but now it's for you. Grab this for me to let freedom = true."
   ];
   const handleNextText = () => {
     if (index < texts.length - 1){

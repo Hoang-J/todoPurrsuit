@@ -77,14 +77,12 @@ function Level1() {
 
   return (
     <>
-
       {/*Using our tenerary operator if fading is false our classname will be only level1body, if fading is true our classname will be fade-out initializing our animation */}
       <div className={`level1bg ${fading ? 'fade-out' : ''}`}></div>
-      <div className= 'everything'> 
-        <div className="maze1">
-          <div className="testing">
-            <div className="maze">
-                <div className="game1-window" style={{ 
+      <div className='everything'>
+          <div className='maze2'>
+              <div className='maze'>
+              <div className="game1-window" style={{ 
                     width: `${parentWidth}px`,
                     height: `${parentHeight}px`}} >
                     <img src={Cat}
@@ -114,19 +112,18 @@ function Level1() {
                         top: 100,
                     }}></div>
                 </div>
-            </div>
-            <div className="pawpad" style={{
-              width: "450px"
-            }}>
-                <img src={Uppaw} onClick={movingUpAction} ></img>
-                <div className= "left-right-pad">
-                    <img src={Leftpaw} onClick={movingLeftAction} ></img>
-                    <img src={Rightpaw} onClick={movingRightAction} ></img>
-                </div>
-                <img src={Downpaw} onClick={movingDownAction} ></img>
-            </div>
+              </div>
+              <div className="pawpad" style={{
+                  width: "450px" 
+                  }}>
+                  <img src={Uppaw} onClick={movingUpAction} ></img>
+                  <div className= "left-right-pad">
+                      <img src={Leftpaw} onClick={movingLeftAction} ></img>
+                      <img src={Rightpaw} onClick={movingRightAction} ></img>
+                  </div>
+                  <img src={Downpaw} onClick={movingDownAction} ></img>
+              </div>
           </div>
-        </div>
       </div>
 
       {/* conditional rendering for a modal */}

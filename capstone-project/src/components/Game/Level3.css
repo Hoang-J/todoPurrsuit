@@ -59,7 +59,7 @@
 .maze2 {
     z-index: 1;
     position: absolute;
-    top: 10%;
+    top: 25%;
     height: 80%;
     width: 100%;
     display: flex;
@@ -88,5 +88,6 @@
     box-shadow: 0 0 5px 5px rgb(220, 220, 220);
     height: 33%;
     width: 40%;
+    margin-top: 10%;
 }
 
