@@ -16,7 +16,7 @@ function Story2() {
   const texts = [
     "Oh meow! This house is so messy!",
     "Okay, focus. I need to find the front door.",
-    "Let's keep searching!"
+    "I gotta keep searching!"
   ];
   const pics = [
     catAngry,
