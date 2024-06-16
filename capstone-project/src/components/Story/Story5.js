@@ -17,7 +17,7 @@ function Story5() {
   const texts = [
     "That dog was weird but nice.",
     "I think I see the house!",
-    <TypeWriter text={"Where do you think you're going Kitty..."}/>
+    <TypeWriter text={"Where do you think you're going, Kitten..."}/>
   ];
   const pics = [
     catStand,
