@@ -2,6 +2,7 @@ import React from 'react'
 import { Sidebar, Menu, MenuItem, } from 'react-pro-sidebar';
 import './Sidenavbar.css' 
 import { Link } from "react-router-dom";
+import paw from '../../images/uppaw.png'
 
 
 
@@ -28,9 +29,11 @@ function Sidenavbar() {
     </Sidebar>
     <main style={{ display: 'flex', padding: 10 }}>
       <div>
-        <button className="sb-button" onClick={() => setToggled(!toggled)}>
-          |||
-        </button>
+        {/* <button className="sb-button" onClick={() => setToggled(!toggled)}> */}
+          <img src={paw} className='sb-button' onClick={() => setToggled(!toggled)} style={{
+            width: "8%"
+          }}></img>
+        {/* </button> */}
       </div>
     </main>
   </div>
