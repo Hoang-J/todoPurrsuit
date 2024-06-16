@@ -15,7 +15,7 @@ export default function Home() {
     {
       setFading(true);
       setTimeout(()=> {
-        history.push('/story1')
+        history.push('/login')
       },1000)
     }
   }
