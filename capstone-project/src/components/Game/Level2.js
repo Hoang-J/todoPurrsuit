@@ -160,7 +160,7 @@ return (
                 width: "30%",
                 margin: "auto",
                 padding: "2%",
-                border: "2px solid #000",
+                border: "10px solid lightyellow",
                 borderRadius: "10px",
                 "box-shadow": "0 0 5px 5px rgb(220, 220, 220)",
             }}> 

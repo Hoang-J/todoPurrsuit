@@ -1,24 +1,24 @@
-.homeBody>#cat{
+#cat{
     width: 8%;
     height:15%;
   position: absolute;
-  left: 78%;
+  left: 77%;
   top: 20%;
   }
   
   .homeBody>#catgif{
     width: 3%;
-    height: 3%;
+    height: 5%;
     position: absolute;
-  left: 80.5%;
-  top: 25%;
+    left: 79.5%;
+    top: 24%;
   }
   .homeBody>#logo{
-    width: 13%;
-    height: 20%;
+    width: 35%;
+    height: 55%;
     position: absolute;
-    left: 30%;
-    top: 10%;
+    left: 10%;
+    top: 20%;
   }
 .homeBody{
     height: 100vh;
@@ -31,3 +31,34 @@
     height: 100px;
     width: 100px;
   }
+
+
+/* justin css */
+
+#catgif {
+  background-color: skyblue;
+  border: 1px solid grey;
+  border-radius: 10%;
+}
+
+#logo {
+  border: 2px solid black;
+  background-color: rgba(255, 182, 193, 0.758);
+  box-shadow: 0 0 5px 5px rgb(255, 255, 255);
+  border-radius: 40%;
+  padding-right: 1%;
+}
+
+.start {
+  width: 9%;
+  height:6%;
+  position: absolute;
+  left: 76.5%;
+  top: 36%;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: larger;
+  background-color: skyblue;
+  box-shadow: 0 0 3px 3px rgb(255, 255, 255);
+  border-radius: 30%;
+  font-weight: bold;
+}
