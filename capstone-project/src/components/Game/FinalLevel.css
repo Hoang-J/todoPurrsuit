@@ -7,9 +7,9 @@
     top: 20%;
     left: 63%;
   }
-  #cloud{
+  /* #cloud{
     width: 100%;
-  }
+  } */
   .thought-bubble {
     position: absolute;
    bottom: 65%;
@@ -49,53 +49,72 @@
     position: relative;
   }
   .Cat2{
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     width: 15%;
     height: auto;
-   top:78%;
+   top:75%;
    transition: left 0.3s ease;
    overflow: hidden;
   }
   #dog{
     z-index: 2;
     position: absolute;
-    top: 70%;
-    left: 170%;
+    top: 52%;
+    /* left: 170%; */
+    left: 96%;
+    height: 44%;
   }
   #button1{
     z-index: 2;
     position: absolute;
-    top: 84%;
-    left: 164.5%;
+    top: 54%;
+    /* left: 164.5%; */
+    left: 93.5%
   }
   #dogtext{
-    z-index: 3;
+    z-index: 2;
     position: absolute;
-    top: 69%;
-    left: 161%;
-    font-size: small;
+    top: 44%;
+    /* left: 157%; */
+    left: 86%;
+    font-size: medium;
     width: 10%;
   }
   #cloud{
-    z-index: 2;
+    z-index: 1;
     position: absolute;
-    top: 60%;
-    left: 157%;
-    height: 30%;
+    top: 32%;
+    /* left: 150%; */
+    left: 79%;
+    height: 40%;
     width: auto;
   }
   .freedom{
-    z-index: 5;
-    height: 15px;
-    width: 12px;
+    z-index: 1;
+    width: 10%;
     position: absolute;
-    top: 61.5%;
-    left: 124.5%;
+    top: 78%;
+    left: 113%;
     height: 25%;
-    transform: rotate(-49deg);
+    transform: rotate(26deg);
+    /* border: 5px solid black; */
   }
 
   #Dungeon1, #Dungeon2 {
     height: 99vh;
+  }
+
+  .fake-nav {
+    position: absolute;
+    left: 150vh;
+    top: 0;
+    width: 72.77vh;
+    height: 9.2vh;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 600;
+    font-style: normal;
+    background-color: lightpink; 
+    border: 3px solid black;
+    border-left-style: none;
   }

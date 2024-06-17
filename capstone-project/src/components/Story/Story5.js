@@ -6,6 +6,7 @@ import catSearch from '../../images/white-cat-expression-move-right.png'
 import catnapper from '../../images/catnapper-shadow-cropped.png'
 import catPaw from '../../images/white-cat-up-paw.png'
 import TypeWriter from '../TypeWriter/TypeWriter';
+import Wave from '../../images/white-cat-expression-wave.png'
 
 
 
@@ -88,8 +89,10 @@ function Story5() {
                   <center>
                       <h1 style={{
                           "font-family": "Gloria Hallelujah, cursive",
-                      }}>... TO BE CONTINUED. <br/> - game completed -</h1>
-                      {/* <img src={Wave}/> */}
+                          "font-size": "x-large"
+
+                      }}>... TO BE CONTINUED.</h1>
+                      <img src={catSearch}/>
                       <br />
                       <button style={{
                           background: "pink",
@@ -97,6 +100,7 @@ function Story5() {
                           border: "2px solid grey",
                           "border-radius": "50%",
                           padding: "5%",
+                          "margin-top": "13%",
                           "font-size": "x-large",
                           "box-shadow": "0 0 3px 3px white",
                           "font-family": "Gloria Hallelujah, cursive",
