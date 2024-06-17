@@ -35,18 +35,20 @@ function Login() {
         <form onSubmit={handleSubmit} id='logForm'>
         {/* Container with inputs and labels(Username,Password)and Login submit button */}
           <div class="logcontainer">
-            <h1>Login</h1>
-              <hr/>
-                <label for="Username"><b>Username</b></label>
-                <input type="text" name="username" class="form-control" id="username" minlength="4" maxlength="30" onChange={handleInputChange} value={loginData.username} required/> 
+            <h1 className='loginTitle'>LOGIN</h1>
+            <hr/>
+            <label for="Username"><b>Username</b></label>
+            <input type="text" name="username" class="form-control" id="username" minlength="4" maxlength="30" onChange={handleInputChange} value={loginData.username} required/> 
 
-                <label for="Password"><b>Password</b></label>
-                <input type="password" name="password"  class="form-control" id="password" minlength="4" maxlength="30" onChange={handleInputChange} value={loginData.password} required/>
+            <label for="Password"><b>Password</b></label>
+            <input type="password" name="password"  class="form-control" id="password" minlength="4" maxlength="30" onChange={handleInputChange} value={loginData.password} required/>
 
-                <a class="home" href="../home">Home</a>
-            
             {/* Login submit button */}
-            <button type="submit" class="loginbtn">Login</button>
+            <button type="submit" class="loginbtn">LOGIN</button>
+
+            <p className='loginTitle'>Dont have an account? <a href="../registration" className="link">Sign Up Now</a> </p>
+            <a class="home" href="../home" className="link loginTitle">Back to Start</a>
+            
           </div>
         </form>
       </div>

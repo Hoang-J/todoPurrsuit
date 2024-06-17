@@ -17,7 +17,7 @@ function Level3() {
     {
       setFading(true);
       setTimeout(()=> {
-        history.push('/finallevel')
+        history.push('/story4')
       },1000)
     }
   }

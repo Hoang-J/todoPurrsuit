@@ -53,8 +53,8 @@ function Registration() {
       <form id='regForm' onSubmit={handleSubmit}>
         {/* <!--Container with inputs and labels(email,password,repeat password)and register submit button --> */}
           <div class="container">
-            <h1>Register</h1>
-            <p>Please fill in this form to create an account.</p>
+            <h1 className='signupTitle'>SIGN UP</h1>
+            {/* <p className='signupTitle createAccount'>Please fill in this form to create an account.</p> */}
             <hr/>
               
             <label for="Firstname"><b>First Name</b></label>
@@ -72,16 +72,15 @@ function Registration() {
             <label for="Password"><b>Password</b></label>
             <input type="password" name="password"  class="form-control" id="password" minlength="4" maxlength="30" onChange={handleInputChange} value={registrationData.password} required/>
 
-            <p>By creating an account you agree to our <a href="#..">Terms & Privacy</a>.</p>
             {/* Register submit button  */}
-            <button type="submit" class="registerbtn">Register</button>
+            <button type="submit" class="registerbtn">SIGN UP</button>
+            {/* <p className='signupTitle'>By creating an account, you agree to our <a href="#.." className="link">Terms & Privacy</a>.</p> */}
+            <p id="regtx" className='signupTitle'>Already have an account? <a href="../Login/logform.html" className="link"> Login Here</a></p>
+            <a class="home" href="../home" className="link signupTitle">Back to Start</a>
           </div>
 
         {/* "Alreadly have an account?" with link to login page container  */}
-          <div class="container login">
-            <a class="home" href="../home">Home</a>
-            <p id="regtx">Already have an account? <a href="../Login/logform.html">Login</a>.</p>
-          </div>
+          
       </form> 
         
     </div>
