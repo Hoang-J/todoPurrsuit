@@ -20,8 +20,8 @@ function Sidenavbar() {
         <p/>
         {/* <MenuItem component={<Link to="/todo" />}>Todo</MenuItem> */}
         {/* <MenuItem component={<Link to="/registration" />}> Register </MenuItem> */}
-        <MenuItem component={<Link to="/story1" />}> Game </MenuItem>
-        <p/>
+        {/* <MenuItem component={<Link to="/story1" />}> Game </MenuItem> */}
+        {/* <p/> */}
         <MenuItem component={<Link to="/store" />}> Store </MenuItem>
         <p/>
         {/* <MenuItem component={<Link to="/Level1" />}> Level 1 </MenuItem> */}

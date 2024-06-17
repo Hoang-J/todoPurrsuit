@@ -61,7 +61,7 @@ function FinalLevel() {
           }, 300) 
          }
       }
-      else if ( e.key === 'Escape'){
+      else if ( e.key === 'p'){
         setPause(true)
       }
     };
