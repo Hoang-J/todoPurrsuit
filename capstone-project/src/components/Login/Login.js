@@ -30,7 +30,8 @@ function Login() {
         history.push('/story1')
       }
       else {
-        history.push('/home')
+        // history.push('/home')
+        alert("Invalid Login. Please Try Again.")
       }
     })
   }

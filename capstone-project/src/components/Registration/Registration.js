@@ -45,6 +45,8 @@ function Registration() {
       username: '',
       password: ''
     })
+
+    alert("Registration complete!")
   }
 
   return (
