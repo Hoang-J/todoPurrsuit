@@ -7,6 +7,7 @@ import Kitty from '../../images/catrunning.gif'
 import Doggy from '../../images/dog.gif'
 import Cloud from '../../images/thoughtcloud.png'
 import { useHistory } from 'react-router-dom';
+import stick from '../../images/stick.png';
 
 function FinalLevel() {
   // Position state helps us move character on X axis
@@ -76,14 +77,15 @@ function FinalLevel() {
 
   return (
     <>
+    <div className='fake-nav'></div>
     <div className='level2body'>
       <img id='Dungeon1' src={Dungeon1}></img> 
-      <img id='Dungeon2' src={Dungeon2}></img>
+      {/* <img id='Dungeon2' src={Dungeon2}></img> */}
     </div>
     <img className='Cat2' style={{ transform, transition }} src={Kitty}></img>
     <img id='dog' src={Doggy}></img>
     <p id='dogtext'>{texts[index]}</p>
-    <div onClick={freedom} className='freedom'></div>
+    <img src={stick} name="stick" onClick={freedom} className='freedom'></img>
     <img id='cloud' src={Cloud}></img>
     {index < texts.length -1 && (
           <button id='button1' onClick={handleNextText}>Next</button>
