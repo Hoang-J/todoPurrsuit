@@ -5,7 +5,7 @@
 #regMain{
   /* background-image: url(''); */
   /* background-image: url(''); */
-  background-image: url('../../images/LoginandReg.jpg');
+  background-image: url('../../images/piedmontpark.jpg');
   /* background-image: url('https://pbs.twimg.com/media/EW17a__XQAArEGu.png'); */
   /* background-image: url('https://c8.alamy.com/comp/2BJ23G3/cute-cartoon-8bit-grey-and-orange-tabby-cat-seamless-vector-pattern-kawaii-pixel-art-kitty-pet-domestic-pet-kitten-video-game-illustration-all-over-2BJ23G3.jpg'); */
   /* background-repeat: no-repeat; */
@@ -22,18 +22,20 @@
 }
 
 #regtx{
-  color: red;
+  color: lightpink;
 }
 
 
 /* Add padding to containers */
 .container { 
-  color: pink;
-  border: solid pink 10px;
+  color: lightpink;
+  border: solid lightpink 10px;
   border-radius: 15px;
   background-color: gray;
-  width: 35%;
+  width: 40%;
   padding: 15px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   }
 
 /* Full-width input fields */
@@ -59,27 +61,42 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: black;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: larger;
+  background-color: skyblue;
   color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
+  /* margin: 8px 0; */
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   opacity: 0.9;
+  border-radius: 40%;
+}
+
+.signupTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.createAccount {
+  color: skyblue;
+  font-size: large;
 }
 
 .registerbtn:hover {
   opacity:1;
 }
 
-/* Add a blue text color to links */
-a {
-  color: blue;
-}
 
 /* Set a grey background color and center the text of the "Login" section */
 .login {
   background-color: #f1f1f1;
   text-align: center;
+}
+
+.form-control {
+  border-radius: 10%;
 }

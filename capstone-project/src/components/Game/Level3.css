@@ -1,0 +1,93 @@
+.level3bg {
+    height: 100vh;
+    background-image: url('../../images/rainy-backyard.png');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    opacity: 0.4;
+    display: flex;
+    z-index: 0;
+    position: relative;
+}
+
+
+.cat-player {
+    overflow: hidden;
+}
+
+.game-window {
+    position: absolute;
+    border: 2px solid white;
+    background-color: #8ebd18;
+    box-shadow: 0 0 5px 5px rgb(220, 220, 220);
+    border-radius: 10%;
+} 
+
+.box1 {
+    background-color: #326317;
+    border-radius: 20%;
+}
+
+.box2 {
+    background-color: grey;
+    border-radius: 20%;
+}
+
+.box3 {
+    background-color: #a13e39;
+    border-bottom-left-radius: 15%;
+    border-top-right-radius: 18%;
+    border-bottom-right-radius: 15%;
+
+}
+
+.box4 {
+    background-color: #6273a9;
+    border-radius: 50%;
+}
+
+.box5 {
+    background-color: #a13e39;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+}
+
+.box6 {
+    background-color: #926337;
+    border-radius: 30%;
+}
+
+.maze2 {
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.everything {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pawpad {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: skyblue;
+    border-radius: 10%;
+    box-shadow: 0 0 5px 5px rgb(220, 220, 220);
+    height: 33%;
+    width: 40%;
+    margin-top: 10%;
+}
+

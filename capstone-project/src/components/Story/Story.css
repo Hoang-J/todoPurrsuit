@@ -2,9 +2,9 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 30%;
+    height: 40%;
     border: 2px solid #33343593;
-    background-color: #4b4646c0;
+    background-color: #4b4646f1;
     color: rgba(255, 255, 255, 0.842);
     font-size: 50px;
     padding-left: 2%;
@@ -12,30 +12,44 @@
 
 .cat-talk {
     position: absolute;
-    left: 140vh;
-    bottom: 3vh;
-    width: 25vh;
+    left: 150vh;
+    bottom: 7vh;
+    width: 24vh;
     height: 25vh;
     z-index: 1;
 }
 
 .level1body{
-    height: 95vh;
+    height: 94vh;
     background-image: url('../../images/broken-laundry-room.jpg');
     background-repeat: no-repeat, repeat;
      background-size: cover;
 }
 
 .level2body{
-    height: 100vh;
+    height: 94vh;
     background-image: url('../../images/broken-living-room.jpg');
     background-repeat: no-repeat, repeat;
      background-size: cover;
 }
 
 .level3body{
-  height: 95vh;
+  height: 94vh;
   background-image: url('../../images/rainy-backyard.png');
+  background-repeat: no-repeat, repeat;
+   background-size: cover;
+}
+
+.level4body{
+  height: 94vh;
+  background-image: url('../../images/metal-fence-background.jpg');
+  background-repeat: no-repeat, repeat;
+   background-size: cover;
+}
+
+.level5body{
+  height: 94vh;
+  background-image: url('../../images/metal-fence-background.jpg');
   background-repeat: no-repeat, repeat;
    background-size: cover;
 }
@@ -46,12 +60,12 @@
   left: 83vh;
   width: 10vh;
 }
-.level1body, .level2body, .level3body{
+.level1body, .level2body, .level3body, .level4body, .level5body{
   position: relative;
   transition: opacity 1s ease-in-out;
 }
 
-.level1body.fade-out, .level2body.fade-out, .level3body.fade-out{
+.level1body.fade-out, .level2body.fade-out, .level3body.fade-out, .level4body.fade-out, .level5body.fade-out{
   opacity: 0;
 }
 

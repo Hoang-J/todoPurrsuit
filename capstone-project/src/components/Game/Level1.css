@@ -1,0 +1,90 @@
+.level1bg{
+  height: 100vh;
+  background-image: url('../../images/broken-laundry-room.jpg');
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  opacity: 0.4;
+  display: flex;
+  z-index: 0;
+  position: relative;
+}
+
+.cat-player {
+  overflow: hidden;
+}
+
+.game1-window {
+  position: absolute;
+  border: 2px solid white;
+  background-color: lightpink;
+  box-shadow: 0 0 5px 5px rgb(220, 220, 220);
+  border-radius: 10%;
+} 
+
+.leftBox {
+  background-color: #bb96c8;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.rightBox {
+  background-color: #bb96c8;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+
+}
+
+.maze {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-right-pad {
+  display: flex;
+  justify-content:space-evenly;
+  height: 35%;
+}
+
+.pawpad > img {
+  height: 30%;
+}
+
+
+.maze2 {
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.everything {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+  width: 100%;
+}
+
+.pawpad {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  z-index: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: skyblue;
+  border-radius: 10%;
+  box-shadow: 0 0 5px 5px rgb(220, 220, 220);
+  height: 33%;
+  width: 40%;
+  margin-top: 10%;
+}
+

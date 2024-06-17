@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import './Todo.css' 
-// import charHappy from '../../images/main-character-smile.png'
-// import charCry from '../../images/main-character-cry.png'
-// import charShock from '../../images/main-character-shock.png'
-import catStretch from '../../images/white-cat-expression-stretch.png'
-import catLook from '../../images/white-cat-expression-move-right.png'
-import catWave from '../../images/white-cat-expression-wave.png'
+import charHappy from '../../images/main-character.png'
+import charCry from '../../images/main-character-sad.png'
+import charFrown from '../../images/main-character-frown.png'
 import catPaw from '../../images/white-cat-up-paw.png'
 
 // Todo page
@@ -18,13 +15,13 @@ function Todo() {
   const history = useHistory()
   const texts = [
     "Todo! Todo! Time to eat! Where did you go?",
-    "Oh no...What do I do??",
+    "Oh no...Where did Todo go??",
     "Please come back home, Todo!"
   ];
   const pics = [
-    catStretch,
-    catLook,
-    catWave
+    charHappy,
+    charFrown,
+    charCry
 
   ]
   // Set condition that as long as index is less than our text array length increment + 1
@@ -86,7 +83,7 @@ return (
         {/*Using our tenerary operator if fading is false our classname will be only level1body, if fading is true our classname will be fade-out initializing our animation */}
       <div className={`textbox bodytext ${fading ? 'fade-out' : ''}`}>
           <p>{texts[index]}</p>
-          <img className='cat-talk' src={pics[index]} />
+          <img className='char-talk' src={pics[index]} />
         {/* Add conditional rendering, as long as the index is less than our text array length the button will be rendered */}
         {index < texts.length -1 && (
           <img id='button' onClick={handleNextText} src={catPaw}/>

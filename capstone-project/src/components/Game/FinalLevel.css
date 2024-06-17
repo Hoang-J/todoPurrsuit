@@ -1,0 +1,170 @@
+/* Level1 */
+
+#walkingcat{
+    height: 25%;
+    width: 10%;
+    position: absolute;
+    top: 20%;
+    left: 63%;
+  }
+  /* #cloud{
+    width: 100%;
+  } */
+  .thought-bubble {
+    position: absolute;
+   bottom: 65%;
+   left: 54.5%;
+    width: 200px;
+  }
+  .thought-bubble p{
+    position: absolute;
+   top: 24%;
+   font-size:.9em;
+    left: 25%;
+    width: 120px;
+  }
+  #button{
+    position: absolute;
+    bottom: 68%;
+    right: 37%;
+  }
+  .level2body {
+    position: relative;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .level2body.fade-out{
+    opacity: 0;
+  }
+  #GO{
+    position: absolute;
+    bottom: 68%;
+    right: 37%;
+  }
+  /* Level2 */
+  .level2body{
+    height: 100vh;
+    display: flex;
+    z-index: 1;
+    position: relative;
+  }
+  .Cat2{
+    z-index: 3;
+    position: absolute;
+    width: 15%;
+    height: auto;
+   top:75%;
+   transition: left 0.3s ease;
+   overflow: hidden;
+  }
+  #dog{
+    z-index: 2;
+    position: absolute;
+    top: 52%;
+    /* left: 170%; */
+    left: 96%;
+    height: 44%;
+  }
+  #button1{
+    z-index: 2;
+    position: absolute;
+    top: 54%;
+    /* left: 164.5%; */
+    left: 93.5%
+  }
+  #dogtext{
+    z-index: 2;
+    position: absolute;
+    top: 44%;
+    /* left: 157%; */
+    left: 86%;
+    font-size: medium;
+    width: 10%;
+  }
+  #cloud{
+    z-index: 1;
+    position: absolute;
+    top: 32%;
+    /* left: 150%; */
+    left: 79%;
+    height: 40%;
+    width: auto;
+  }
+  .freedom{
+    z-index: 1;
+    width: 10%;
+    position: absolute;
+    top: 78%;
+    left: 113%;
+    height: 25%;
+    transform: rotate(26deg);
+    /* border: 5px solid black; */
+  }
+
+  #Dungeon1, #Dungeon2 {
+    height: 99vh;
+  }
+
+  .fake-nav {
+    position: absolute;
+    left: 150vh;
+    top: 0;
+    width: 72.77vh;
+    height: 9.2vh;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 600;
+    font-style: normal;
+    background-color: lightpink; 
+    border: 3px solid black;
+    border-left-style: none;
+  }
+  
+  .pauseMenu{
+    z-index: 6;
+    height: 50%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+  }
+  #X{
+    height: 10%;
+    z-index: 6;
+  color:white;
+    position: absolute;
+    top: 58%;
+    right: 52%;
+  }
+  :hover#X{
+    cursor: pointer;
+    color: red;
+  }
+  .quit{
+    height: 10%;
+    z-index: 6;
+  color:white;
+    position: absolute;
+    top: 59%;
+    right: 69.5%;
+  }
+  :hover.quit{
+    cursor: pointer;
+  }
+
+  .nav{
+    z-index: -1;
+    width: 197.6%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+  }
+  #esc{
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    font-family: "Gloria Hallelujah", cursive;
+    color: yellow;
+    border: solid black;
+    background-color: rgba(59, 59, 240, 0.355);
+    left: 10%;
+  }
