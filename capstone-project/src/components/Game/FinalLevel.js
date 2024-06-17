@@ -8,6 +8,9 @@ import Doggy from '../../images/dog.gif'
 import Cloud from '../../images/thoughtcloud.png'
 import { useHistory } from 'react-router-dom';
 import stick from '../../images/stick.png';
+import Pausemenu from '../../images/pausemenu.png'
+import Close from '../../images/close.png'
+import Quit from '../../images/quit.png'
 
 function FinalLevel() {
   // Position state helps us move character on X axis
@@ -17,6 +20,7 @@ function FinalLevel() {
   // jumping and jump height states helpe us initiate jumping animation and falling
   const [jumping, setJumping] = useState(false)
   const [jumpHeight, setJumpHeight] = useState(0)
+  const [pause, setPause] = useState(false)
 
   const [index, setIndex] = useState(0);
   const [fading, setFading] = useState(false)
@@ -57,6 +61,9 @@ function FinalLevel() {
           }, 300) 
          }
       }
+      else if ( e.key === 'Escape'){
+        setPause(true)
+      }
     };
     document.addEventListener('keydown', handleKeyPress);
   
@@ -70,6 +77,12 @@ function FinalLevel() {
    history.push('/Story5')
     }, 500);
     
+  }
+  const close = () =>{
+   setPause(false)
+  }
+  const quitter = () => {
+    history.push('/home')
   }
 
   const transform = `translateX(${position}px) translateY(${jumpHeight}px) ${left ? 'scaleX(-1)' : ''}`;
@@ -90,6 +103,21 @@ function FinalLevel() {
     {index < texts.length -1 && (
           <button id='button1' onClick={handleNextText}>Next</button>
         )}
+    {pause && (
+      <div>
+        <img style={{
+          transform: `translateX(${position}px)`, transition
+        }} className='pauseMenu' src={Pausemenu}></img>
+        <img style={{
+           transform: `translateX(${position}px)`, transition
+        }} id='X' onClick={close} src={Close}></img>
+        <img onClick={quitter} style={{
+          transform: `translateX(${position}px)`, transition
+        }} className='quit' src={Quit}></img>
+
+        </div>
+
+    )}
       
     
     
