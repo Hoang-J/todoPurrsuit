@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import './Login.css'
 
 function Login() {
 
   // const [inputPass, setInputPass] = useState(null);
   // const [inputName, setInputName] = useState(null);
+  const history = useHistory()
 
   const [loginData, setLoginData] = useState({
     username: '',
@@ -22,9 +24,14 @@ function Login() {
     console.log("called endpoint")
     //e.preventDefault();
     fetch(`https://todo-purrsuit-backend.vercel.app/login?username=${loginData.username}&password=${loginData.password}`)
-    setLoginData({
-      username: '',
-      password: ''
+    .then(response => response.json())
+    .then(data => {
+      if(data == 'loggedin') {
+        history.push('/story1')
+      }
+      else {
+        history.push('/home')
+      }
     })
   }
 
