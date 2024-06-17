@@ -14,11 +14,13 @@
   top: 25%;
   }
   .homeBody>#logo{
+    z-index: 6;
     width: 13%;
     height: 20%;
     position: absolute;
-    left: 30%;
-    top: 10%;
+    left: 39%;
+    top: 32%;
+
   }
 .homeBody{
     height: 100vh;
@@ -27,7 +29,29 @@
      background-size: cover;
   }
   .playScreen{
-    border: solid black 1px;
-    height: 100px;
-    width: 100px;
+  z-index: 5;
+    border: solid rgba(0, 0, 0, 0.214) 1px;
+    background-color: rgba(0, 0, 0, 0.448);
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    right: 40%;
+    top: 30%;
+  }
+  #play{
+    z-index: 6;
+    position: absolute;
+    right: 51%;
+    top: 49%;
+    height: 10%;
+    width: auto;
+  }
+  :hover#play{
+    cursor: pointer;
+  }
+  .nav{
+    width: 500%;
+    position: absolute;
+    left: 1%;
+    top: 1%;
   }
