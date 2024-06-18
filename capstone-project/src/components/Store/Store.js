@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import './Store.css'
 import donate from '../../images/donate.png'
+import './Store.css'
 
 export default function Store() {
-
+  // setting up the useState to make the modal appear and disappear on a button click
   const [donateClicked, setDonateClicked] = useState(false);
   // makes the donate modal pop up
   function handleClick() {
@@ -16,12 +16,15 @@ export default function Store() {
 
   return (
   <>
+    {/* Everything is in this div for organization sake, maybe later on can use it for flex properties */}
     <div className='storeBody'>
+      {/* The background image of the store being applied from CSS */}
       <div className='store-inner-body'></div>
-      {/* <a href='https://buy.stripe.com/test_6oE5kM6n78VcbBK4gh' target='_blank'><img src={donate} id='donate' alt='donate'></img></a> */}
+      {/* Div outlining the donate button */}
       <div className='item-donate-box'></div>
+      {/* Donate button, once clicked on the donate modal will appear */}
        <img src={donate} id='donate' alt='donate' onClick={handleClick}/>
-
+        {/* All the store items */}
         <div className='store-items'>
             {/* Youth white t-shirt */}
             <div className='item-box'>
@@ -50,7 +53,6 @@ export default function Store() {
               </stripe-buy-button>
             </div>
 
-
             {/* Tote bag logo */}
             <div className='item-box'>
               <stripe-buy-button
@@ -59,13 +61,11 @@ export default function Store() {
               >
               </stripe-buy-button>
             </div>
-      </div>
+         </div>
 
-      
-
-
-      {/* conditional rendering for the modal */}
+      {/* conditional rendering for the donate modal */}
       {donateClicked && (
+        /* the below div determines the positioning of the modal */
         <div style={{
           position: "fixed",
           top: 0,
@@ -78,7 +78,7 @@ export default function Store() {
           justifyContent: "center",
           "z-index": "2"
           }}>
-          
+          {/* the below div styles the modal itself */}
           <div className= "modal" style={{
               background: "lightskyblue",
               height: "50%",
@@ -89,8 +89,10 @@ export default function Store() {
               borderRadius: "10px",
               "box-shadow": "0 0 5px 5px rgb(220, 220, 220)",
             }}> 
+            {/* the below styles the contents within the modal */}
             <center>
-            <button style={{
+              {/* The close button */}
+              <button style={{
                     background: "pink",
                     width: "6%",
                     height: "10%",
@@ -101,14 +103,14 @@ export default function Store() {
                     "font-family": "Gloria Hallelujah, cursive",
                     position: "absolute",
                     top: "23vh",
-                    right: "60vh"
-
-                  }} onClick={handleClose}>Close</button>
-              <h1 style={{
-                "font-family": "Gloria Hallelujah, cursive",
-              }}>Select your Charity: </h1>
-              
+                    right: "60vh"}} 
+                    onClick={handleClose}>
+                    Close
+              </button>
+              <h1 style={{ "font-family": "Gloria Hallelujah, cursive" }}>Select your Charity: </h1>
+              {/* Add some spacing between the buttons and the title*/}
               <br />
+
               {/* Alley Cat Allies Button */}
               <stripe-buy-button
               buy-button-id="buy_btn_1PSMjE2NegYeTfbFjhBloghL"
@@ -116,7 +118,9 @@ export default function Store() {
               >
               </stripe-buy-button>
 
+              {/* Add some spacing between the buttons*/}
               <p></p>
+
               {/* Alley Cat Rescue Button */}
               <stripe-buy-button
               buy-button-id="buy_btn_1PSNE52NegYeTfbF2DROtjhq"
@@ -124,14 +128,15 @@ export default function Store() {
               >
               </stripe-buy-button>
 
+              {/* Add some spacing between the buttons*/}
               <p></p>
+              
               {/* ASCPA Button */}
               <stripe-buy-button
               buy-button-id="buy_btn_1PSNKt2NegYeTfbFT3StEIiB"
               publishable-key="pk_test_51PLFek2NegYeTfbF80e5GERAmZOxeJjguiGpTeGsdFs2lcY4VjqGGXcdnXpiTtdx4MitNuZjq7JkYNlrHyZcEMpP00QdrBFr9X"
               >
               </stripe-buy-button>
-
             </center>
           </div>
         </div>

@@ -1,12 +1,13 @@
+/* Background Image of the store page */
 .store-inner-body{
     height: 100vh;
     background-image: url('../../images/kittystore.jpg');
     background-repeat: no-repeat, repeat;
      background-size: cover;
      opacity: 0.4;
-  }
+}
 
-
+/* Positioning of the items and the background div its on */
 .store-items {
   background-color: #ffc0bcc8;
   border: 3px solid rgb(0, 0, 0);
@@ -22,38 +23,38 @@
   display: flex;
   padding-top: 11vh;
   justify-content: space-around;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap; 
 }
 
-  #donate{
-    position: absolute;
-    top: 86vh;
-    right: 81.5vh;
-    height: 15%;
-    width: 8%;
-    z-index: 3;
-  }
+/* Positioning of the donate button */
+#donate{
+  position: absolute;
+  top: 86vh;
+  right: 81.5vh;
+  height: 15%;
+  width: 8%;
+  z-index: 3;
+}
 
-  .item-box {
-    height: 50vh;
-    border-radius: 5px;
-    background-color: skyblue; 
-    /* padding: 1%; */
-    box-shadow: 0 0 3px 3px white;
-    border: 2px solid black;
-  }
+/* Positioning and design of the div behind each items to highlight it against the background */
+.item-box {
+  height: 50vh;
+  border-radius: 5px;
+  background-color: skyblue; 
+  box-shadow: 0 0 3px 3px white;
+  border: 2px solid black;
+}
 
-  .item-donate-box {
-    border-radius: 5px;
-    background-color: skyblue; 
-    /* padding: 1%; */
-    box-shadow: 0 0 3px 3px white;
-    border: 2px solid black;
-    position: absolute;
-    top: 86vh;
-    right: 81.5vh;
-    height: 15%;
-    width: 8%;
-    z-index: 2;
-  }
+/* Positioning and design of the div behind the donate button to highlight it against the background */
+.item-donate-box {
+  border-radius: 5px;
+  background-color: skyblue; 
+  box-shadow: 0 0 3px 3px white;
+  border: 2px solid black;
+  position: absolute;
+  top: 86vh;
+  right: 81.5vh;
+  height: 15%;
+  width: 8%;
+  z-index: 2;
+}

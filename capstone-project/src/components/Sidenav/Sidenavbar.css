@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
-
-
-
-/* Sidebar nav */
+/* Sidebar nav styling */
 #sidebar{
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 600;
@@ -11,28 +8,15 @@
     background-color: lightpink; 
     border: 3px solid black;
 }
+
+/* Sidebar nav button */
 .sb-button{
-    /* font-family: "Gloria Hallelujah", cursive;
-    font-weight: 600;
-    font-style: normal; */
     border-radius: 5px;
     background-color: skyblue; 
     padding: 1%;
     box-shadow: 0 0 3px 3px white;
     border: 2px solid black;
-    /* margin-top: 1%; */
 }
-
-
-/* 
-.css-16g65jg.ps-sidebar-image {
- border-radius: 10px;
-}
-
-.css-1ay8yy4 {
-  border: solid black;
-  border-radius: 10px;
-} */
 
 .css-m0qamy {
     border: solid black 5px;

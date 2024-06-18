@@ -1,37 +1,45 @@
 import React, { useState } from 'react'
-import './Story.css'
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom'
 import catStand from '../../images/white-cat-expression-stand.png'
 import catSearch from '../../images/white-cat-expression-move-right.png'
 import catnapper from '../../images/catnapper-shadow-cropped.png'
 import catPaw from '../../images/white-cat-up-paw.png'
-import TypeWriter from '../TypeWriter/TypeWriter';
-import Wave from '../../images/white-cat-expression-wave.png'
-
-
+import TypeWriter from '../TypeWriter/TypeWriter'
+import './Story.css'
 
 function Story5() {
-  const [index, setIndex] = useState(0);
+  // setting up useState for index for the handleNextText function
+  const [index, setIndex] = useState(0)
+  // setting up useState for fading for the screen to have a fading effect after the button with the "GO" id is clicked
   const [fading, setFading] = useState(false)
+  // setting up the useState for the "To be continue" modal to appear to show end of story
   const [finalClick, setFinalClick] = useState(false)
-  //useHistory hook lets us access paths that we have set up
+  // useHistory hook lets us access different paths that we have set up
+  // used it to help navigate users to the correct path created with the react-router
+  // have to initialize it first in order to use it
   const history = useHistory()
+  // array of text to loop through to display in the textbox
   const texts = [
     "That dog was weird but nice.",
     "I think I see the house!",
+    // Using the TypeWriter component to give text a video game effect where the words are appearing slowly and one letter at a time
     <TypeWriter text={"Where do you think you're going, Kitten..."}/>
-  ];
+  ]
+  // array of pictures to loop through to display in the textbox
   const pics = [
     catStand,
     catSearch,
     catnapper
 
   ]
-  // Set condition that as long as index is less than our text array length increment + 1
+  // Set condition that as long as index is less than our text array length then will increment + 1
+  // this function will help the text go to the next one inside the array after a button click
+  // it will also change the pictures to reflect the emotions of the cat based on the text
   const handleNextText = () => {
     if (index < texts.length - 1){
       setIndex(index + 1)
     } else {
+      // Once all the text has been looped through, will update the finalClick state to true to trigger conditional rendering of the "To be continued" modal
       setFinalClick(true)
     }
   }
@@ -39,6 +47,7 @@ function Story5() {
   function handleClose() {
     setFading(true);
       setTimeout(()=> {
+        // set a delay to show the fade-out effect and then reroute the user to a different path
         history.push('/home')
       },1000)
   }
@@ -55,16 +64,14 @@ function Story5() {
         {/* Add conditional rendering, as long as the index is less than our text array length the button will be rendered */}
         {index < texts.length -1 && (
             <img id='button' onClick={handleNextText} src={catPaw}/>
-          /* <button id='button' onClick={handleNextText}>Next</button> */
         )}
         {/* using conditoinal rendering once our index is equal to our arrays length our go button will be available, allowing us to transition to the next scene */}
         {index === texts.length - 1 && (
-          <>
             <img id='GO' onClick={handleNextText} src={catPaw}/> 
-            {/* <button id='GO' onClick={handleNextText}>GO!</button>  */}
-          </>
         )}  
+        {/* conditional rendering for a modal */}
         {finalClick && (
+          /* the below div determines the positioning of the modal */
           <>  
             <div style={{
               position: "fixed",
@@ -77,6 +84,7 @@ function Story5() {
               alignItems: "center",
               justifyContent: "center",
               "z-index": "2"}}>
+              {/* the below div styles the modal itself */}
               <div className= "modal" style={{
                   background: "lightskyblue",
                   height: "50%",
@@ -86,6 +94,7 @@ function Story5() {
                   border: "10px solid lightyellow",
                   borderRadius: "10px",
                   "box-shadow": "0 0 5px 5px rgb(220, 220, 220)" }}> 
+                  {/* the below styles the contents within the modal */}
                   <center>
                       <h1 style={{
                           "font-family": "Gloria Hallelujah, cursive",
@@ -106,10 +115,9 @@ function Story5() {
                           "font-family": "Gloria Hallelujah, cursive",
                       }} onClick={handleClose}>Back to Start</button>
                   </center>
-              </div>
+                </div>
             </div>
           </>
-          
         )}
       </div>
     </>

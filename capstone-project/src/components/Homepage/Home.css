@@ -1,36 +1,39 @@
-#cat{
-    width: 8%;
-    height:15%;
+#cat {
+  width: 8%;
+  height:15%;
   position: absolute;
   left: 77%;
   top: 20%;
-  }
+}
   
-  .homeBody>#catgif{
-    width: 3%;
-    height: 5%;
-    position: absolute;
-    left: 79.5%;
-    top: 24%;
-  }
-  .homeBody>#logo{
-    width: 35%;
-    height: 55%;
-    position: absolute;
-    left: 10%;
-    top: 20%;
-  }
-.homeBody{
-    height: 100vh;
-    background-image: url('../../images/piedmontpark.jpg');
-    background-repeat: no-repeat, repeat;
-     background-size: cover;
-  }
-  .playScreen{
-    border: solid black 1px;
-    height: 100px;
-    width: 100px;
-  }
+.homeBody>#catgif {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  left: 79.5%;
+  top: 24%;
+}
+
+.homeBody>#logo {
+  width: 35%;
+  height: 55%;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.homeBody {
+  height: 100vh;
+  background-image: url('../../images/piedmontpark.jpg');
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+.playScreen {
+  border: solid black 1px;
+  height: 100px;
+  width: 100px;
+}
 
 
 /* justin css */

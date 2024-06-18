@@ -21,14 +21,13 @@ import {
 
 function App() {
   return (
+  // Paths created with react router dom
     <>
      <Sidenavbar />
       <Switch>
         <Route path='/' component={Todo} exact/>
         <Route path='/todo' component={Todo}/> 
         <Route path='/home' component={Home} />
-        {/* <Route path='/' component={} /> */}
-        {/* <Route path='/' component={} /> */}
         <Route path='/registration' component={Registration} />
         <Route path='/login' component={Login} />
         <Route path='/store' component={Store} />
