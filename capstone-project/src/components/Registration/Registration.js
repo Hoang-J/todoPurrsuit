@@ -46,7 +46,7 @@ function Registration() {
       password: ''
     })
 
-    alert("Registration complete!")
+    alert("Registration complete! Please allow 5 minutes for processing.")
   }
 
   return (
