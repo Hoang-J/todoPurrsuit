@@ -1,3 +1,4 @@
+/* Kinda see-through grayish textbox where the text and cat character images goes */
 .textbox {
     position: absolute;
     bottom: 0;
@@ -10,6 +11,7 @@
     padding-left: 2%;
 }
 
+/* The sizing of the cat character, the z-index is set to 1 to put it in front of the textbox */
 .cat-talk {
     position: absolute;
     left: 150vh;
@@ -19,56 +21,66 @@
     z-index: 1;
 }
 
+/* Background for the Story1 component */
 .level1body{
     height: 94vh;
     background-image: url('../../images/broken-laundry-room.jpg');
     background-repeat: no-repeat, repeat;
-     background-size: cover;
+    background-size: cover;
 }
 
+/* Background for the Story2 component */
 .level2body{
     height: 94vh;
     background-image: url('../../images/broken-living-room.jpg');
     background-repeat: no-repeat, repeat;
-     background-size: cover;
+    background-size: cover;
 }
 
+/* Background for the Story3 component */
 .level3body{
   height: 94vh;
   background-image: url('../../images/rainy-backyard.png');
   background-repeat: no-repeat, repeat;
-   background-size: cover;
+  background-size: cover;
 }
 
+/* Background for the Story4 component */
 .level4body{
   height: 94vh;
   background-image: url('../../images/metal-fence-background.jpg');
   background-repeat: no-repeat, repeat;
-   background-size: cover;
+  background-size: cover;
 }
 
+/* Background for the Story5 component */
 .level5body{
   height: 94vh;
   background-image: url('../../images/metal-fence-background.jpg');
   background-repeat: no-repeat, repeat;
-   background-size: cover;
+  background-size: cover;
 }
 
+/* The paw button at the bottom of the text box */
 #button{
   position: absolute;
   bottom: 4vh;
   left: 83vh;
   width: 10vh;
 }
+
+/* Transition effect for the entire component once the fading effect is triggered from the button click */
 .level1body, .level2body, .level3body, .level4body, .level5body{
   position: relative;
   transition: opacity 1s ease-in-out;
 }
 
+/* Makes the entire component opacity go to 0, along with the transition css above, will give a fade out effect */
 .level1body.fade-out, .level2body.fade-out, .level3body.fade-out, .level4body.fade-out, .level5body.fade-out{
   opacity: 0;
 }
 
+/* Positioning for the button with this id */
 #GO{
   position: absolute;
   bottom: 4vh;

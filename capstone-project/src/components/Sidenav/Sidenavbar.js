@@ -4,46 +4,33 @@ import './Sidenavbar.css'
 import { Link } from "react-router-dom";
 import paw from '../../images/uppaw.png'
 
-
-
 function Sidenavbar() {
-    const [toggled, setToggled] = React.useState(false);
+  const [toggled, setToggled] = React.useState(false);
+
   return (
     <>
-    <div id='sidebar'>
-    <Sidebar onBackdropClick={() => setToggled(false)} toggled={toggled} breakPoint="always"  backgroundColor='rgba(135, 207, 235, 0.852)'>
-      <Menu>
-        <br/>
-        <p/>
-        <br />
-        <MenuItem component={<Link to="/home" />}> Start Screen </MenuItem>
-        <p/>
-        {/* <MenuItem component={<Link to="/todo" />}>Todo</MenuItem> */}
-        {/* <MenuItem component={<Link to="/registration" />}> Register </MenuItem> */}
-        {/* <MenuItem component={<Link to="/story1" />}> Game </MenuItem> */}
-        {/* <p/> */}
-        <MenuItem component={<Link to="/store" />}> Store </MenuItem>
-        <p/>
-        {/* <MenuItem component={<Link to="/Level1" />}> Level 1 </MenuItem> */}
-        {/* <MenuItem component={<Link to="/" />}> New Route</MenuItem> */}
-        {/* <MenuItem component={<Link to="/story2" />}> Story2 </MenuItem>
-        <MenuItem component={<Link to="/story3" />}> Story3 </MenuItem>
-        <MenuItem component={<Link to="/story4" />}> Story4 </MenuItem>
-        <MenuItem component={<Link to="/story5" />}> Story5 </MenuItem> */}
-        <MenuItem component={<Link to="/login" />}> Sign Out </MenuItem>
-      </Menu>
-    </Sidebar>
-    <main style={{ display: 'flex', padding: 10 }}>
-      <div>
-        {/* <button className="sb-button" onClick={() => setToggled(!toggled)}> */}
-          <img src={paw} className='sb-button' onClick={() => setToggled(!toggled)} style={{
-            width: "8%"
-          }}></img>
-        {/* </button> */}
+      {/* Side-bar with links for router in App.js imported from react-pro sidebar */}
+      <div id='sidebar'>
+        <Sidebar onBackdropClick={() => setToggled(false)} toggled={toggled} breakPoint="always"  backgroundColor='rgba(135, 207, 235, 0.852)'>
+          <Menu>
+            <br/>
+            <p/>
+            <br />
+            <MenuItem component={<Link to="/home" />}> Start Screen </MenuItem>
+            <p/>
+            <MenuItem component={<Link to="/store" />}> Store </MenuItem>
+            <p/>
+            <MenuItem component={<Link to="/login" />}> Sign Out </MenuItem>
+          </Menu>
+        </Sidebar>
+        {/* container for button at top of webpages */}
+        <main style={{ display: 'flex', padding: 10 }}>
+          <div>
+              {/* paw image used to open side bar routing options */}
+              <img src={paw} className='sb-button' onClick={() => setToggled(!toggled)} style={{ width: "8%" }}></img>
+          </div>
+        </main>
       </div>
-    </main>
-  </div>
-  {/* <Outlet /> */}
     </>
   )
 }

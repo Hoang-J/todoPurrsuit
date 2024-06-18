@@ -22,6 +22,7 @@ export default function Home() {
 
   return (
     <>
+      {/* ternary operator allow us to initialize an animation when fading = true */}
       <div className={`level1body ${fading ? 'fade-out' : ''}`}>
         <div className='homeBody'>
           <div className="poster">

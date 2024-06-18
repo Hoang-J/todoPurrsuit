@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
-/* to-do list font */
+/* To-do list font */
 #notepadImg{
   font-family: "Gloria Hallelujah", cursive;
   font-weight: 400;
   font-style: normal;
 }
-/* todo list positioning */
+
+/* To-do list positioning */
 #todopaper{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-/* Todo page styling */
+/* To-do page styling */
 #notepadImg{
   display: flex;
   flex-direction: column;
@@ -23,24 +23,19 @@
   border-radius: 15px;
   width: 600px;
   height: 750px;
-  /* background-color: aqua; */
-  /* background-image: url('https://st2.depositphotos.com/5777248/9334/v/950/depositphotos_93345058-stock-illustration-sheet-of-notebook-cartoon-icon.jpg'); */
-  /* background-image: url('https://4vector.com/i/free-vector-notepad-clip-art_114504_Notepad_clip_art_hight.png'); */
   background-image: url('../../images/clipboard.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* Todolist text */
+
+/* To-do list text */
 #notepadText{
-  /* position: absolute; */
   top: 235px;
   left: 130px;
   font-size: 30px;
-  /* position: absolute;
-  top: 25%;
-  left: 40%; */
 }
 
+/* Text for submit button */
 #todoButton{
   font-family: "Gloria Hallelujah", cursive;
   font-weight: 600;
@@ -70,18 +65,17 @@
 }
 
 .bodytext{
-  /* height: 95vh; */
-  /* background-image: url('../../images/broken-laundry-room.jpg'); */
   background-repeat: no-repeat, repeat;
-   background-size: cover;
+  background-size: cover;
 }
 
-.bodytext{ 
-position: relative;
-transition: opacity 1s ease-in-out;
+.bodytext{
+
+  position: relative;
+  transition: opacity 1s ease-in-out;
 }
 
 .bodytext.fade-out{
-opacity: 0;
+  opacity: 0;
 }
 

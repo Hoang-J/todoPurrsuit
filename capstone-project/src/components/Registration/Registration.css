@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-/* Registration Form Styling */
-/* body styling */
+/* Registration Page background styling */
 * {box-sizing: border-box}
+
 #regMain{
-  /* background-image: url(''); */
-  /* background-image: url(''); */
   background-image: url('../../images/piedmontpark.jpg');
-  /* background-image: url('https://pbs.twimg.com/media/EW17a__XQAArEGu.png'); */
-  /* background-image: url('https://c8.alamy.com/comp/2BJ23G3/cute-cartoon-8bit-grey-and-orange-tabby-cat-seamless-vector-pattern-kawaii-pixel-art-kitty-pet-domestic-pet-kitten-video-game-illustration-all-over-2BJ23G3.jpg'); */
-  /* background-repeat: no-repeat; */
   background-size: cover;
 }
+
 /* Registration form styling */
 #regForm{
   display: flex;
@@ -21,12 +17,12 @@
   font-style: normal;
 }
 
+/* Registration form text color */
 #regtx{
-  color: lightpink;
+  color: pink;
 }
 
-
-/* Add padding to containers */
+/* Add padding to containers and color */
 .container { 
   color: lightpink;
   border: solid lightpink 10px;
@@ -36,7 +32,7 @@
   padding: 15px;
   margin-top: 5%;
   margin-bottom: 5%;
-  }
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=email], input[type=number] {
@@ -65,7 +61,6 @@ hr {
   font-size: larger;
   background-color: skyblue;
   color: white;
-  /* margin: 8px 0; */
   border: none;
   cursor: pointer;
   width: 60%;

@@ -1,4 +1,4 @@
-.level1bg{
+.level1bg {
   height: 100vh;
   background-image: url('../../images/broken-laundry-room.jpg');
   background-repeat: no-repeat, repeat;
@@ -87,4 +87,3 @@
   width: 40%;
   margin-top: 10%;
 }
-

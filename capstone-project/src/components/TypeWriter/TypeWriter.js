@@ -17,7 +17,6 @@ function TypeWriter({text}) {
                setCurrentIndex(previousCharIndex => previousCharIndex + 1)
               //  the speed in ms of when the next letter should appear one after the other
             }, 100) 
-           
         }
         // useEffect will keep running as long as the currentIndex and text state is updating
     }, [currentIndex, text])
@@ -26,7 +25,6 @@ function TypeWriter({text}) {
     <>
         <span>{currentText}</span>   
     </>
-    
   )
 }
 
