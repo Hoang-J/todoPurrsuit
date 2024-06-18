@@ -51,7 +51,7 @@ To build the backend, our team implmented node.js and express.js. Express.js hel
 ### Jessie Hoang
 <img src="./capstone-project/src/images/readmeImages/jessie.jpeg" width="150">
 
-### Joel Lucke
+### Joel Luke
 <img src="./capstone-project/src/images/readmeImages/joel.jpeg" width="150">
 
 ### Nicolas Lozoya
