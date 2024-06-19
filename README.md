@@ -15,7 +15,30 @@ This group project is a full-stack React application. We use a variety of React 
 
 To build the backend, our team implmented node.js and express.js. Express.js helped by using routes, middleware functions, and organization of data in javascript to easily create a functional server-side framework. Our team use elephantSQL to create databases to hold information for the project. We also created our own RESTful API by building GET, POST, PATCH, and DELETE endpoints. In order to access postgreSQL in node.js, we implemented pg-promise. This PostgreSQL library allows us to use SQL commands within our javascript code to use our stored data. Within our endpoints, we used the bcrypt installation package to assist with password protection. Bcrypt salts, hashes, and then securely stores our encrypted passwords into our elephantSQL database. Lastly, we installed Winston to log endpoint calls and any errors within those calls so we can track specific information that may give insight to the issue and our solution.
 
+## Swagger Documentation
+Our team created an API that retrieves login information and players' scores from databases created through elephantSQL. We used Swagger, an API documentation tool that simplifies the descriptions and consumption of REST APIs, to document each of our endpoints for our login database and our score-tracking database. 
 
+To view Swagger Documentation, please follow these steps:
+- [Clone this repo](https://github.com/Hoang-J/todo-purrsuit-swagger)
+- `npm i` which will install all necessary dependencies
+- `npm start` which will bring you to `http://localhost:4242/api-docs/` on your browser to view the Swagger page
+
+Below are some screenshots of the documentation:
+
+## Screenshots of Swagger Documentation
+### Login Server
+|   |  |
+| ----------- | ----------- |
+| GET | <img src="./capstone-project/src/images/readmeImages/swagger/swagger-login-get.png" width="500" height="300"> <img src="./capstone-project/src/images/readmeImages/swagger/swagger-login-get-response.png" width="500" height="300"> |
+| POST | <img src="./capstone-project/src/images/readmeImages/swagger/swagger-login-post.png" width="500" height="300"> <img src="./capstone-project/src/images/readmeImages/swagger/swagger-login-post-response.png" width="500" height="300"> |
+
+### Scoreboard Server
+|   |  |
+| ----------- | ----------- |
+| GET | <img src="./capstone-project/src/images/readmeImages/swagger/swagger-score-get.png" width="500" height="300"> <img src="./capstone-project/src/images/readmeImages/swagger/swagger-score-get-response.png" width="500" height="300"> |
+| POST | <img src="./capstone-project/src/images/readmeImages/swagger/swagger-score-post.png" width="500" height="300"> <img src="./capstone-project/src/images/readmeImages/swagger/swagger-score-post-response.png" width="500" height="300"> |
+| PATCH | <img src="./capstone-project/src/images/readmeImages/swagger/swagger-score-patch.png" width="500" height="300"> <img src="./capstone-project/src/images/readmeImages/swagger/swagger-score-patch-response.png" width="500" height="300"> |
+| DELETE | <img src="./capstone-project/src/images/readmeImages/swagger/swagger-score-delete.png" width="500" height="300"> <img src="./capstone-project/src/images/readmeImages/swagger/swagger-score-delete-response.png" width="500" height="300"> |
 
 ## Screenshots of Project
 ### To-Do
